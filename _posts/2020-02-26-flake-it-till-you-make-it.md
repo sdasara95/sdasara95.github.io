@@ -2,7 +2,7 @@
 layout: post
 title: A new beginning
 subtitle: Ramblings
-cover-img: /assets/img/football_stadium.jpg
+cover-img: /assets/img/football_stadium (2).jpg
 tags: [personal, graduation]
 ---
 

@@ -23,6 +23,7 @@ navbar-links:
   About Me: "aboutme"
   Projects: https://github.com/sdasara95
   Resume: "/Satya_Dasara_Data_Scientist_Resume.pdf"
+  Stats: "stats"
 nav-search: search
 
 # --- Logo --- #
@@ -51,7 +52,7 @@ social-network-links:
   github: sdasara95
   #twitter: daattali
   rss: false
-  leetcode: "sdasara"
+#   leetcode: "sdasara"
 #  reddit: yourname
 #  xing: yourname
   stackoverflow: "10779528/sdasara"

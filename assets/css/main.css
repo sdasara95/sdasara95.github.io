@@ -370,8 +370,8 @@ img {
   }
 }
 
-nav-link.nav-search-link;
-nav-link.nav-search-text;
+.nav-link .nav-search-link;
+.nav-link .nav-search-text;
 .nav-search-link .nav-search-icon {
   display: none;
 }

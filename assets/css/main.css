@@ -386,6 +386,8 @@ img {
     line-height: 1.5;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    font-weight: 800;
+    color: {{ site.navbar-text-col | default: "#404040" }};
   }
   .nav-search-link .nav-search-text {
     display: none;

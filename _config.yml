@@ -16,7 +16,6 @@ navbar-links:
   About Me: "aboutme"
   Projects: "/index.html"
   Resume: "/Satya_Dasara_Data_Scientist_Resume.pdf"
-  🔍: "aboutme"
 nav-search: search
 
 # --- Logo --- #

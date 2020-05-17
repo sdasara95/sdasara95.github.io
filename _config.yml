@@ -14,7 +14,7 @@ author: Satya Dasara
 navbar-links:
   Home: "/index.html"
   About Me: "aboutme"
-  Projects: "/index.html"
+  Projects: https://github.com/sdasara95
   Resume: "/Satya_Dasara_Data_Scientist_Resume.pdf"
 nav-search: search
 

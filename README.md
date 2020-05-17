@@ -1,4 +1,4 @@
 # sdasara95.github.io
 
-My personal web-page.
+My personal web-page
 

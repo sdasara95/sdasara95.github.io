@@ -6,6 +6,13 @@ title: ✅👑
 # Short description of your site
 description: A virtual proof that I'm a living creature.
 
+# --- Outputting options --- #
+# More information can be found on Jekyll's site
+timezone: "America/New_York"
+highlighter: rouge
+paginate: 6
+
+
 # Your name to show in the footer
 author: Satya Dasara
 
@@ -104,7 +111,7 @@ footer-link-col: "#000000" #"#404040"
 #gtag: ""
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+google_analytics: "UA-166921083-1"
 
 # Google Tag Manager ID
 #gtm: ""
@@ -123,7 +130,7 @@ footer-link-col: "#000000" #"#404040"
 #disqus: ""
 
 # To use Facebook Comments, create a Facebook app and fill in the Facebook App ID
-#fb_comment_id: ""
+fb_comment_id: ""
 
 # To use Utterances comments: (0) uncomment the following section, (1) fill in
 # "repository" (make sure the repository is public), (2) Enable Issues in your repository,

@@ -13,6 +13,13 @@ Life is very weird, for some things go according to plan, for others things go n
 
 I feel the same mindset should be applied to life too in general. Regret is obviously another thing that needs to be handled carefully. Epicurean way of life would be freedom from regret and emphasis of pleasure but if you ask sportsmen who never lived up to their potential due to their fondness for worldly pleasures in their youth, many would say they regret their past and wish if they were more focused. Again the notion that the variables are uncountable holds true. There is no panacea, there's only life.
 
-Some people might argue that epistemology is futile if the variables are uncountable. Well we humans are restless beings and will go mad if we sit idle. Hence, we have to keep doing something to keep our minds active. Like me writing this and you reading this 😉. Our minds have to be engaged continuously else there's no point of us living. 
+Some people might argue that epistemology is futile if the variables are uncountable. They might say that if such was the case then there would be no modern science or no progression of mankind. They might suggest that there's no point of life. Well we humans are restless beings and will go mad if we sit idle. Hence, we have to keep doing something to keep our minds active. Like me writing this and you reading this 😉. Our minds have to be engaged continuously else there's no point of us living. This alone is the primary driving force for mankind. People want to do something and achieve something. This achievement is seen as progression for mankind in that field.
+Humans's desires and their extreme willingness to explore is the main reason why humans are no longer apes.
+
+I remember a famous personality's interview where he said," I believe 24/7 that I am in a jungle, this forces me to be cautious and not indulge in debauchery which'll make me an easy prey for others. ". I found this quite interesting. It's his desire not be hoodwinked again and willingness to be on his toes which led him to construct such a watchful frame of mind for himself.
+
+Frankly speaking, my situation as an international student living by myself and searching for jobs in a foreign country has led me to ponder over these things. If I was in my home country in the comfort of my family, I would have become complacent without any desire or willingness to explore, leading to just another futile life.
+
+Let's see what's in store for me, I'll reflect again a month later in the continuation of this series. Let's call it Ramblings for now.
 
 

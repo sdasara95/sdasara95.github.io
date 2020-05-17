@@ -43,12 +43,11 @@ social-network-links:
   #facebook: satyaraja.dasara.7
   github: sdasara95
   #twitter: daattali
-  rss: true
+  rss: false
   leetcode: "sdasara"
 #  reddit: yourname
 #  xing: yourname
   stackoverflow: "10779528/sdasara"
-  kaggle: "sdasara"
 #  snapchat: deanat78
 #  instagram: deanat78
 #  youtube: user/deanat78

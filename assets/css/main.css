@@ -378,10 +378,10 @@ img {
 }
 @media only screen and (min-width: 768px) {
   .navbar-custom .nav-item .nav-search-link .nav-search-icon {
-    display: inline;
+    display: none;
   }
   .navbar-custom .nav-item .nav-search-link .nav-search-text {
-    display: none;
+    display: inline;
   }
 }
 

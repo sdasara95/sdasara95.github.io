@@ -378,10 +378,14 @@ img {
 }
 @media only screen and (min-width: 768px) {
   .nav-search-link .nav-search-icon {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    display: inline;
-    font-family: 'Open Sans', 'Helvetica Neue',Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.0625rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 1.5;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
   .nav-search-link .nav-search-text {
     display: none;

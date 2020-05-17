@@ -1,6 +1,5 @@
 ---
 layout: page
-title: "Search"
 css: "/css/search.css"
 ---
 

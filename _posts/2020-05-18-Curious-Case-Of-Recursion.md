@@ -91,7 +91,17 @@ The pattern of a palindrome is that if first and last letters match then it's a 
 If we consider a word like **sasas**. <br />
 s [asa] s <br />
  a [s] a  <br />
-    
+Our base case would be if we were left with one or none character. <br />
+Python code for this would be:
+```python
+def palindrome(string):
+  if len(string)<=1:
+    return True
+  if string[0]==string[-1]:
+    return palindrome(string[1:-1]
+  else:
+    return False
+```
 
 
 

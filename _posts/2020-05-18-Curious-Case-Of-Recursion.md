@@ -15,8 +15,7 @@ This blog shall go through each of her recursion videos and ***summarize*** the 
 
 # Introduction
 {% include youtube-embed.html id="gl3emqCuueQ" %} 
-
-#---
+---
 ### What's recursion?
 * Recursive functions call themselves....duh 🤷‍♂️ <br />
 * Solve problems using co-workers or **CLONES** 🔑 <br />
@@ -40,7 +39,7 @@ She then goes on to define ***Functional Recursion***
 ### Exponential problem 
 ***base<sup>exp</sup> = base * base<sup>exp-1</sup>***  <br />
 Python code to achieve this would be: <br />
-```
+```python
 def exp(base,power):
   if power==0:
     return 1

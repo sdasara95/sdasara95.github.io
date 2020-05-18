@@ -15,8 +15,7 @@ This blog shall go through each of her recursion videos and ***summarize*** the 
 
 # Introduction
 {% include youtube-embed.html id="gl3emqCuueQ" %} 
-<br />
-Recursive function calls itself....duh 🤷‍♂️ <br />
-Solve problems using co-workers or **CLONES** 🔑 <br />
-For problems which exhibit **Self-Similarity** 👈 <br />
-We spawn **smaller instances** of the **same function** doing the **same task** on **smaller input**. <br />
+* Recursive function calls itself....duh 🤷‍♂️ <br />
+* Solve problems using co-workers or **CLONES** 🔑 <br />
+* For problems which exhibit **Self-Similarity** 👈 <br />
+* We spawn **smaller instances** of the **same function** doing the **same task** on **smaller input**. <br />

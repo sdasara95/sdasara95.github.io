@@ -484,22 +484,25 @@ footer .footer-custom-content {
 } */
  
 .youtube-container {
-   border: 0;
+  height: 150px;
+  width: 280px;
+/*    border: 0;
    height: 100%;
    left: 0;
   overflow: hidden;
   padding-top: 56.25%;
    position: relative;
    top: 0;
-   width: 100%;
+   width: 100%; */
 }
 
-/* @media (min-width: 768px) {
-.youtube {
+@media (min-width: 768px) {
+.youtube-container {
   width=560px ;
   height=315px ;
 }  
-} */
+}
+
 /* --- Post preview --- */
 
 .post-preview {

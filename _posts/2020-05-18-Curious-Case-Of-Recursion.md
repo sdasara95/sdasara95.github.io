@@ -16,9 +16,11 @@ This blog shall go through each of her recursion videos and ***summarize*** the 
 # Introduction
 {% include youtube-embed.html id="gl3emqCuueQ" %} 
 ### What's recursion?
+
 * Recursive function calls itself....duh 🤷‍♂️ <br />
 * Solve problems using co-workers or **CLONES** 🔑 <br />
 * For problems which exhibit **Self-Similarity** 👈 <br />
+
 We spawn **smaller instances** of the **same function** doing the **same task** on **smaller input/ problem**. <br />
 ***Base Case*** is when the ***input/problem*** is ***so small*** that we ***don't need*** another task repeating ***clone***. <br />
 

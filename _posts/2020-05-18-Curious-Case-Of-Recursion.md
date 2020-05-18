@@ -11,7 +11,7 @@ Recursion has always been a tough concept to wrap my head around.  My main flaw 
 <br />
 [Julie Zelenski's](https://www-cs-faculty.stanford.edu/~zelenski/) Stanford Lectures do an amazing job of making you understand recursion. Her [Programming Abstractions Course (CS106B)](http://web.stanford.edu/class/cs106b/) is an amazing place to start for those struggling with recursion or computer science fundamentals in general. Her lectures are quite engaging and she succintly explains the core concepts. The videos are available on [YouTube](https://www.youtube.com/watch?v=kMzH3tfP6f8). She explains recursion in ***videos 8-11***. <br />
 <br />
-This blog shall go through each of her recursion videos and ***summarize*** the ***core ideas***.
+This blog shall go through each of her recursion videos and ***summarize*** the ***core ideas*** through my Python implementation of the algorithms.
 
 # Introduction
 {% include youtube-embed.html id="gl3emqCuueQ" %} 
@@ -173,7 +173,7 @@ Recursion can be broadly classified into procedural and functional. <br>
 
 Drawing a fractal like Sierpinski triangle is an example of procedural recursion. <br>
 We are not returning anything but are achieving the drawing of the fractal during recursion. <br>
-You can copy Sierpinski Triangle [python code](https://runestone.academy/runestone/books/published/pythonds/Recursion/pythondsSierpinskiTriangle.html){:target="_blank"} and paste below in main.py to visualize: 
+You can copy Sierpinski Triangle [python code here](https://runestone.academy/runestone/books/published/pythonds/Recursion/pythondsSierpinskiTriangle.html){:target="_blank"} and paste below in main.py to visualize: 
 <iframe src="https://trinket.io/embed/python/66d046e959" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 Try changing the order of the recursive calls and you'll see the order of drawing change. This is because the tree is being unrolled differently. <br>
@@ -275,10 +275,10 @@ for i in res:
   print(i)
 ```
 Try running this above. You'll get 24 as the length of our result array which is 4! <br>
-A question might arise now....what if input was ***aba*** i.e. input consists of repeating characters. In that case our above algorithm will give duplicates like two aba. What do we do? Well we can put a condition where we check that if we have encountered a character already we skip through if we encounter it again. <br>
+A question might arise now....what if input was ***aba*** i.e. input consists of repeating characters. We will repeated computation again on already visited characters. In that case our above algorithm will give duplicates like two aba instead of one. What do we do? Well we can put a condition where we check that if we have encountered a character already we skip through if we encounter it again. <br>
 The modified Python code would be: <br>
 ```python
-inp = 'abcd'
+inp = 'aba'
 def permutation(inp):
     '''
     Input: String
@@ -307,10 +307,31 @@ print(len(res))
 for i in res:
   print(i)
 ```
+The same logic can be extended to list as input. <br>
 This recursion follows a ***choice pattern*** i.e. make a choice and do recursion and aggregate the results. <br>
 Hmmmm, are you still having difficulty understanding the recursion? It's okay. Recursion is tricky 😄 <br>
 This tree diagram will help you understand better: <br>
 ![tree](/assets/img/perm_tree_new.png){: .mx-auto.d-block :} 
 <br>
+
+Permutation is a ***master pattern*** of recursion as there are many problems which can be reduced to a permutation problem. <br>
+Let's explore the other ***master pattern*** : ***subsets***
+
+### Subset Problem
+Let's consider a string: ABC <br>
+It's subsets would be ABC, AB, BC, CA, A, B, C 
+***Solving Recursively***
+* What is the output?
+* Separate an element from the input
+* Call adding element to output (Subsets with element)
+* Call without adding element to output (Subsets without element)
+* What is the base case?
+
+Have we seen similar problem before? 🤔 <br>
+Well....same patterns often resurface....<sup>n</sup>C<sub>k</sub> 😵 <br>
+
+
+
+
 
 

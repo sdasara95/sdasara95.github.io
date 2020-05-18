@@ -225,7 +225,7 @@ It's permutations would be DCBA, CABD, etc.
 * How do we ensure each letter is used once?
 * What is the base case?
 
-If we were to write code, we would want to select a word **S[i]** from string **S**, generate substring **S[:i]+S[i+1:]** and prepend **S[i]** to all permutations of the substring **S[:i]+S[i+1:]**. Base case would be when substring **S[:i]+S[i+1:]** is empty. We repeat this for all words in index **i=0...n** to get permutations of string **S**. <br>
+If we were to write code, we would want to select a character **S[i]** from string **S**, generate substring **S[:i]+S[i+1:]** and prepend **S[i]** to all permutations of the substring **S[:i]+S[i+1:]**. Base case would be when substring **S[:i]+S[i+1:]** is empty. We repeat this for all characters in index **i=0...n** to get permutations of string **S**. <br>
 Let's use a procedural recursion where we don't return and just print the permutations. <br>
 The Python code for this would be: <br>
 ```python
@@ -249,4 +249,28 @@ permutation_print('',inp)
 Copy this code and ***paste*** it in ***main.py*** and run it
 <iframe src="https://trinket.io/embed/python/66d046e959" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
+Now you may be thinking, what if I want to store the values. I want to verify if I got the correct answer by checking the length of the array. 😏 Not an issue. We can return lists instead of printing.
+```python
+inp = 'abcd'
+def permutation(inp):
+    '''
+    Input: String
+    Func: For each letter in input, we recurse with remaining letters
+    Output: List of Permuted Strings
+    '''
+    if len(inp)==0:
+        return ['']
+    
+    permutations = []
+    for idx,char in enumerate(inp):
+        new_inp = inp[:idx]+inp[idx+1:]
+        strings_so_far = permutation(new_inp)
+        strings_so_far = [char+string for string in strings_so_far]
+        permutations.extend(strings_so_far)
+    
+    return permutations
 
+res = permutation(inp)
+print(len(res))
+[print(i) for i in res]
+```

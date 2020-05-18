@@ -172,7 +172,7 @@ Recursion can be broadly classified into procedural and functional. <br>
 
 Drawing a fractal like Sierpinski triangle is an example of procedural recursion. <br>
 We are not returning anything but are achieving the drawing of the fractal during recursion. <br>
-You can visualize Sierpinski Triangle [!python code](https://runestone.academy/runestone/books/published/pythonds/Recursion/pythondsSierpinskiTriangle.html)
+You can visualize Sierpinski Triangle [python code](https://runestone.academy/runestone/books/published/pythonds/Recursion/pythondsSierpinskiTriangle.html)
 <iframe src="https://trinket.io/embed/python/66d046e959" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 

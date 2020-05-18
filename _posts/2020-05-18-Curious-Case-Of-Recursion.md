@@ -102,6 +102,9 @@ def palindrome(string):
   else:
     return False
 ```
+One way of formulating a recursive solution is to get a base case and test it, then consider one layer out( one recursive call out ). <br />
+You can think as it works for 0, it works for 1, it works for 2, ***take a leap of faith*** ,it works for n, it works for n+1. <br />
+This idea is very similar to bottom-up dynamic programming. <br />
 
 
 

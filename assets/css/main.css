@@ -413,22 +413,26 @@ footer .revolvermap{
   
 footer .list-inline {
 /*   margin: 0; */
+  text-align: left;
   margin-top: 1rem;
   padding: 0;
   margin-bottom: 1.875rem;
 }
 footer .copyright {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  text-align: center;
+/*   text-align: center; */
+  text-align: left;
   margin-bottom: 0;
   margin-top: 0;
 }
 footer .theme-by {
-  text-align: center;
+/*   text-align: center; */
+  text-align: left;
   margin: 0.625rem 0 0;
 }
 footer .footer-custom-content {
-  text-align: center;
+/*   text-align: center; */
+  text-align: left;
   margin-bottom: 0.9375rem;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }

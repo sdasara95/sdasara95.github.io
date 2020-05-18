@@ -274,3 +274,4 @@ res = permutation(inp)
 print(len(res))
 [print(i) for i in res]
 ```
+Try running this above. You'll get 24 as the length of our result array which is 4! <br>

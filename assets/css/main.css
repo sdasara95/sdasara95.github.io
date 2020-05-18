@@ -478,12 +478,20 @@ footer .footer-custom-content {
 /* --- YouTube --- */
  
 .youtube-container {
-  height: 300px;
-  width: 500px;
+  height: 150px;
+  width: 250px;
   resize: both;
   overflow: auto;
 }
 
+@media (min-width: 768px) {
+.youtube-container {
+  height: 300px;
+  width: 500px;
+  resize: both;
+  overflow: auto;
+}   
+}
 
 /* --- Post preview --- */
 

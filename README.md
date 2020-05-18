@@ -1,5 +1,6 @@
 # sdasara95.github.io
-
+> *Copyright 2020 [Satyaraja Dasara](https://sdasara95.github.io). Licensed under the MIT license.*
+<br />
 My personal web-page
 
 Don't fork 😂

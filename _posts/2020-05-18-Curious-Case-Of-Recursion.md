@@ -68,7 +68,7 @@ If you're a bit confused about this, then think of it as you are ***decomposing 
 Hence, if odd multiply with an additional base. <br />
 This algorithm will be faster with a time complexity of ***O(log N)*** <br />
 <br />
-Julie cautions against ***arm's length recursion***. </br>
+Julie cautions against ***arm's length recursion***. <br /> 
 An example would be: <br />
 ```python
 def exp(base,power):
@@ -106,6 +106,28 @@ One way of formulating a recursive solution is to get a base case and test it, t
 You can think as it works for 0, it works for 1, it works for 2, ***take a leap of faith*** ,it works for n, it works for n+1. <br />
 This idea is very similar to bottom-up dynamic programming. <br />
 
+### Binary Search
+This classic decrease and conquer problem can be solved both iteratively and recursively. However recursive solutions are always elegant and short pieces of code. <br />
+Python code for this would be: <br>
+```python
+n = len(array)
+def binary_search(array,key,start=0,end=n):
+  mid = (start+end)//2
+  if array[mid]==key:
+    return True
+  if start>end:
+    return False
+  if mid>key:
+    binary_search(array,key,start,mid)
+  else:
+    binary_search(array,key,mid+1,end)
+```
+Some may get confused with the following base-case: <br>
+```python
+if start>end:
+    return False
+```
+When the key **is not** present in the array, we will reach a stage where start=n and end = n+1. In such a case, mid = n. This will make our new start = n+1 and end = n+1 reamains same. This time our mid=n+1 and new start = n+2 but end remains n+1. Hence, the base case gets triggered. <br>
 
 
 

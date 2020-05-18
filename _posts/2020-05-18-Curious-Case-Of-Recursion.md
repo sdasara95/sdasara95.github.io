@@ -225,6 +225,26 @@ It's permutations would be DCBA, CABD, etc.
 * How do we ensure each letter is used once?
 * What is the base case?
 
-If we were to write code, we would want to select a word **S[i]** from string **S**, generate substring **S[:i]+S[i+1:]** and prepend **S[i]** to all permutations of the substring **S[:i]+S[i+1:]**. Base case would be when substring **S[:i]+S[i+1:]** is empty. We repeat this for all words in index **i=0...n** to get permutations of string **S** <br>
+If we were to write code, we would want to select a word **S[i]** from string **S**, generate substring **S[:i]+S[i+1:]** and prepend **S[i]** to all permutations of the substring **S[:i]+S[i+1:]**. Base case would be when substring **S[:i]+S[i+1:]** is empty. We repeat this for all words in index **i=0...n** to get permutations of string **S**. <br>
+Let's use a procedural recursion where we don't return and just print the permutations. <br>
+The Python code for this would be: <br>
+```python
+inp = 'abcd'
+def permutation_print(StringSoFar, RemString):
+    '''
+    Input: String explored so far, Remaining string to use
+    Func: Procedural Recursion where we print out all strings
+    Output: None
+    '''
+    if len(RemString)==0:
+        print(StringSoFar)
 
+    for idx,char in enumerate(RemString):
+        NewStringSoFar = StringSoFar + char
+        NewRemString = RemString[:idx]+RemString[idx+1:]
+        permutation_print(NewStringSoFar, NewRemString)
+
+permutation_print('',inp)
+```
+Try
 

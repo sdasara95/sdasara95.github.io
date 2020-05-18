@@ -476,32 +476,14 @@ footer .footer-custom-content {
 }
 
 /* --- YouTube --- */
-/* .youtube-container {
-  overflow: hidden;
-  // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625)
-  padding-top: 56.25%;
-  position: relative;
-} */
  
 .youtube-container {
-  height: 150px;
-  width: 280px;
+  height: 300px;
+  width: 500px;
+  resize: both;
+  overflow: auto;
 }
-/*    border: 0;
-   height: 100%;
-   left: 0;
-  overflow: hidden;
-  padding-top: 56.25%;
-   position: relative;
-   top: 0;
-   width: 100%; */
 
-@media (min-width: 768px) {
-.youtube-container {
-  width=560px ;
-  height=315px ;
-}  
-}
 
 /* --- Post preview --- */
 

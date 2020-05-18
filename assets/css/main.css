@@ -440,6 +440,7 @@ footer .footer-custom-content {
   }
   footer .footer-links {
     font-size: 1.125rem;
+    text-align: left;
   }
   footer .copyright {
     font-size: 1rem;

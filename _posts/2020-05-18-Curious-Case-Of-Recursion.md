@@ -13,10 +13,12 @@ Recursion has always been a tough concept to wrap my head around.  My main flaw 
 <br />
 
 <iframe width="560" height="315"
-src="https://www.youtube.com/watch?v=gl3emqCuueQ" 
+src="https://www.youtube.com/embed/gl3emqCuueQ" 
 frameborder="0" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6EVs0BrG57I" frameborder="0" allowfullscreen></iframe>
 
 
 

@@ -44,7 +44,11 @@ def exp(base,power):
   return base * exp(base,power-1)
 ```
 How many recursive cases will be called before base case? <br >
-There'll be ***power*** number of recursive calls. Let's say time complexity is O(N) <br >
+There'll be ***power*** number of recursive cat's say time/2omplex Let's say time/2omplexity is ***O(N)*** <br >
 Can we make it more efficient? <br />
 🤔 Well yeah, there's a way. Consider this property: <br />
+***base<sup>exp</sup> = base<sup>exp/2</sup> * base<sup>exp/2</sup>***  <br />
+Now a question might arise....what about odd numbers? <br />
+Well....for odd it'll be something like this: <br />
+***base<sup>exp</sup> = base * base<sup>exp/2</sup> * base<sup>exp/2</sup>***  <br />
 

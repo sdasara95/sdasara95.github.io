@@ -215,7 +215,6 @@ When I started off this post, I wrote how recursion is a way to call the same fu
 Now I know some of you might get confused with ***permutations*** or conflate it with ***combinations***. 😵 <br>
 Let's first understand what's permutation. <br>
 {% include youtube-embed.html id="HauSvpRVIgc" %} <br>
-
 ### Permutation Problem
 Let's consider a string: "ABCD" <br>
 It's permutations would be DCBA, CABD, etc. 
@@ -276,9 +275,42 @@ for i in res:
   print(i)
 ```
 Try running this above. You'll get 24 as the length of our result array which is 4! <br>
+A question might arise now....what if input was ***aba*** i.e. input consists of repeating characters. In that case our above algorithm will give duplicates like two aba. What do we do? Well we can put a condition where we check that if we have encountered a character already we skip through if we encounter it again. <br>
+The modified Python code would be: <br>
+```python
+inp = 'abcd'
+def permutation(inp):
+    '''
+    Input: String
+    Func: For each letter in input, we recurse with remaining letters
+    Output: List of Permuted Strings
+    '''
+    if len(inp)==0:
+        return ['']
+    
+    permutations = []
+    visited = set()
+    for idx,char in enumerate(inp):
+        # Checking if we char is visited already
+        if char in visited:
+          continue
+        visited.add(char)
+        new_inp = inp[:idx]+inp[idx+1:]
+        strings_so_far = permutation(new_inp)
+        strings_so_far = [char+string for string in strings_so_far]
+        permutations.extend(strings_so_far)
+    
+    return permutations
+
+res = permutation(inp)
+print(len(res))
+for i in res:
+  print(i)
+```
 This recursion follows a ***choice pattern*** i.e. make a choice and do recursion and aggregate the results. <br>
 Hmmmm, are you still having difficulty understanding the recursion? It's okay. Recursion is tricky 😄 <br>
 This tree diagram will help you understand better: <br>
-![tree](/assets/img/perm_tree.png){: .mx-auto.d-block :} 
+![tree](/assets/img/perm_tree_new.png){: .mx-auto.d-block :} 
 <br>
+
 

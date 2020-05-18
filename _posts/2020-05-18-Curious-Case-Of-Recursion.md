@@ -25,7 +25,7 @@ We spawn ***smaller instances*** of the ***same function*** doing the ***same ta
 ***Base Case*** is when the ***input/problem*** is ***so small*** that we ***don't need*** another task repeating ***clone*** <br />
 <br />
 
-She then goes on to define ***Functional Recursion***  <br />
+She then goes on to define ***Functional Recursion*** 
 * Function that returns answer or result
   * Outer problem result ⬅ Result from smaller same problem
 * Base case

@@ -486,6 +486,7 @@ footer .footer-custom-content {
 .youtube-container {
   height: 150px;
   width: 280px;
+}
 /*    border: 0;
    height: 100%;
    left: 0;
@@ -494,7 +495,6 @@ footer .footer-custom-content {
    position: relative;
    top: 0;
    width: 100%; */
-}
 
 @media (min-width: 768px) {
 .youtube-container {

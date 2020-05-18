@@ -51,6 +51,7 @@ Can we make it more efficient? <br />
 Now a question might arise....what about ***odd powers***? <br />
 Well....for ***odd powers*** it'll be something like this: <br />
 ***base<sup>exp</sup> = base * base<sup>exp/2</sup> * base<sup>exp/2</sup>***  <br />
+*Remember that we are considering absolute division of the powers here*
 Python code to achieve this would be: <br />
 ```python
 def exp(base,power):

@@ -141,6 +141,24 @@ def choose(n,k):
     return 1
   return choose(n-1,k) + choose(n-1,k-1)
 ```
-Our base case here is ***no choices remaining at all!*** hence we check k==0 or k==n.
+Our base case here is ***no choices remaining at all!*** hence we check k==0 or k==n. <br>
+Consider picking k items as a task, when k=0 it means we have picked k items and have finished the task. Hence we return 1 to signify we finished one task. There'll be many such task and we are interested in finding the total number of tasks i.e. combinations.
 
+Well we have summarized lecture 8. Hang on! We have 3 more to go 😂
+
+# Thinking Recursively
+{% include youtube-embed.html id="uFJhEPrbycQ" %}
+
+### Challenges and how to tackle them
+1. Recursive Decomposition
+  * Find recursive sub-structure
+    * Solve problem from subproblems
+  * Identify base case
+    * Simplest possible case, easily solvable, recursion advances to it
+2.  ***Common Patterns to solve***
+  * ***Handle first and/or last, recur on remaining***
+  * ***Divide in half, recur on one/both halves***
+  * ***Make a choice among options, recur on updated state***
+3. Placement of recursive calls
+  * ***Recur-then-process*** versus Process-then-recur
 

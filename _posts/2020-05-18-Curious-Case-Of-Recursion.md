@@ -44,7 +44,7 @@ def exp(base,power):
   return base * exp(base,power-1)
 ```
 How many recursive cases will be called before base case? <br >
-There'll be ***power*** number of recursive cat's say time/2omplex Let's say time/2omplexity is ***O(N)*** <br >
+There'll be ***power*** number of recursive calls. Let's say time complexity is ***O(N)*** <br >
 Can we make it more efficient? <br />
 🤔 Well yeah, there's a way. Consider this property: <br />
 ***base<sup>exp</sup> = base<sup>exp/2</sup> * base<sup>exp/2</sup>***  <br />
@@ -66,5 +66,7 @@ def exp(base,power):
 If you're a bit confused about this, then think of it as you are ***decomposing for even power always*** <br />
 ***base<sup>5</sup> = base<sup>4</sup> * base*** <br />
 Hence, if odd multiply with an additional base. <br />
-This algorithm will be faster with a time complexity of ***O(log N)*** 
+This algorithm will be faster with a time complexity of ***O(log N)*** <br />
+<br />
+
 

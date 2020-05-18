@@ -23,7 +23,6 @@ navbar-links:
   About Me: "aboutme"
   Projects: https://github.com/sdasara95
   Resume: "/Satya_Dasara_Data_Scientist_Resume.pdf"
-  Stats: "stats"
 nav-search: search
 
 # --- Logo --- #

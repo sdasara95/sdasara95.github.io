@@ -18,9 +18,10 @@ This blog shall go through each of her recursion videos and ***summarize*** the 
 <br />
 <iframe src="https://trinket.io/embed/python/3d8d7ce66b" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 <br />
-> Recursive function calls itself....duh 🤷‍♂️
-> Solve problems using co-workers or **CLONES** 🔑
-> For problems which exhibit **Self-Similarity** 👈
+> Recursive function calls itself....duh 🤷‍♂️ <br />
+> Solve problems using co-workers or **CLONES** 🔑 <br />
+> For problems which exhibit **Self-Similarity** 👈 <br />
+We spawn **smaller instances** of the **same function** doing the **same task** on **smaller input**. <br />
 
 This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
 

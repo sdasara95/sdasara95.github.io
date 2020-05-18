@@ -51,13 +51,20 @@ Can we make it more efficient? <br />
 Now a question might arise....what about ***odd powers***? <br />
 Well....for ***odd powers*** it'll be something like this: <br />
 ***base<sup>exp</sup> = base * base<sup>exp/2</sup> * base<sup>exp/2</sup>***  <br />
-*Remember that we are considering absolute division of the powers here*
+*Remember that we are considering absolute division of the powers here* <br />
 Python code to achieve this would be: <br />
 ```python
 def exp(base,power):
   if power==0:
     return 1
   val = exp(base,power/2)
-  return val*val
+  if power%2==0:
+    return val*val
+  else:
+    return val*val*base
 ```
+If you're a bit confused about this, then think of it as you are ***decomposing for even power always*** <br />
+base<sup>5<sup> ➡ base<sup>4</sup> * base <br />
+Hence, if odd multiply with an additional base. <br />
+This algorithm will be faster with a time complexity of ***O(log N)*** 
 

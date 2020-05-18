@@ -204,6 +204,27 @@ Hence, it's equation would be: <br>
 T(N) = 2* T(N/2) + O(N) where O(N) is the max number of comparisions before merging the divided arrays. <br>
 Solving this following same steps as before gives us, <br>
 T(N) = 2<sup>log<sub>2</sub>N</sup> + &sum;<sub>log<sub>2</sub>N</sub> O(N) <br>
-T(N) = N + O(N)log<sub>2</sub>N = O(N log<sub>2</sub>N) <br>
+T(N) = N + O(N) * log<sub>2</sub>N = O(N log<sub>2</sub>N) <br>
+<br>
+Well this math was unexpected 😅 <br>
+Anyways now that we have a basic idea of recursion, let's move on to next lecture about permutations(it's present in current lecture too) and subsets. <br>
+
+# Permutations and Subsets
+{% include youtube-embed.html id="NdF1QDTRkck" %}
+When I started off this post, I wrote how recursion is a way to call the same function to achieve bruteforce. If you look at ***most recursive problems***, they are actually a variant of ***finding permutations*** or ***finding subsets***. <br>
+Now I know some of you might get confused with ***permutations*** or conflate it with ***combinations***. 😵 <br>
+Let's first understand what's permutation. <br>
+{% include youtube-embed.html id="HauSvpRVIgc" %} <br>
+
+### Permutation Problem
+Let's consider a string: "ABCD" <br>
+It's permutations would be DCBA, CABD, etc. 
+***Solving Recursively***
+* What is the output?
+* Choose a letter and append it to output from input
+* How do we ensure each letter is used once?
+* What is the base case?
+
+If we were to write code, we would want to select a word **S[i]** from string **S**, generate substring **S[:i]+S[i+1:]** and prepend **S[i]** to all permutations of the substring **S[:i]+S[i+1:]**. Base case would be when substring **S[:i]+S[i+1:]** is empty. We repeat this for all words in index **i=0...n** to get permutations of string **S** <br>
 
 

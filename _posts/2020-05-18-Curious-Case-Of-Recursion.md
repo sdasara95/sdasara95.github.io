@@ -37,7 +37,7 @@ She then goes on to define ***Functional Recursion***
   * Results of recursive calls combined to solve larger version
   
 **Exponential problem** </br>
-**base<sup>exp</sup> = base * base<sup>exp-1</sup>**  <br />
+***base<sup>exp</sup> = base * base<sup>exp-1</sup>***  <br />
 Python code to achieve this would be: <br />
 ```
 def exp(base,power):

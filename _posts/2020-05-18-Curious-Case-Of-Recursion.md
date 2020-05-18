@@ -204,6 +204,6 @@ Hence, it's equation would be: <br>
 T(N) = 2* T(N/2) + O(N) where O(N) is the max number of comparisions before merging the divided arrays. <br>
 Solving this following same steps as before gives us, <br>
 T(N) = 2<sup>log<sub>2</sub>N</sup> + &sum;<sub>log<sub>2</sub>N</sub> O(N) <br>
-T(N) = N log<sub>2</sub>N + O(N) = O(N log<sub>2</sub>N) <br>
+T(N) = N + O(N)log<sub>2</sub>N = O(N log<sub>2</sub>N) <br>
 
 

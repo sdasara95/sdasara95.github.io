@@ -33,7 +33,6 @@ She then goes on to define ***Functional Recursion***
   * Make ***call to self*** to get ***results for smaller, simpler version***
   * ***Recursive calls must advance towards base case***
   * Results of recursive calls combined to solve larger version
-* 
 
 ### Exponential problem 
 ***base<sup>exp</sup> = base * base<sup>exp-1</sup>***  <br />

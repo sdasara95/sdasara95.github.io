@@ -25,7 +25,6 @@ This blog shall go through each of her recursion videos and ***summarize*** the 
 We spawn ***smaller instances*** of the ***same function*** doing the ***same task*** on ***smaller input/ problem***. <br />
 ***Base Case*** is when the ***input/problem*** is ***so small*** that we ***don't need*** another task repeating ***clone*** <br />
 <br />
-
 She then goes on to define ***Functional Recursion*** 
 * Function that returns answer or result
   * Outer problem result ⬅ Result from smaller same problem
@@ -36,7 +35,7 @@ She then goes on to define ***Functional Recursion***
   * Make ***call to self*** to get ***results for smaller, simpler version***
   * ***Recursive calls must advance towards base case***
   * Results of recursive calls combined to solve larger version
-* Return result
+* 
 
 ### Exponential problem 
 ***base<sup>exp</sup> = base * base<sup>exp-1</sup>***  <br />

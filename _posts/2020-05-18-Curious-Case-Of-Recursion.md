@@ -14,6 +14,10 @@ Recursion has always been a tough concept to wrap my head around.  My main flaw 
 This blog shall go through each of her recursion videos and ***summarize*** the ***core ideas***.
 
 # Introduction
+> Recursive function calls itself....duh 🤷‍♂️ <br />
+> Solve problems using co-workers or **CLONES** 🔑 <br />
+> For problems which exhibit **Self-Similarity** 👈 <br />
+We spawn **smaller instances** of the **same function** doing the **same task** on **smaller input**. <br />
 {% include youtube-embed.html id="gl3emqCuueQ" %} 
 <br />
 <iframe src="https://trinket.io/embed/python/3d8d7ce66b" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>

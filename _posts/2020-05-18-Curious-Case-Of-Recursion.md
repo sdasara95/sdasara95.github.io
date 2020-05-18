@@ -48,7 +48,15 @@ There'll be ***power*** number of recursive cat's say time/2omplex Let's say tim
 Can we make it more efficient? <br />
 🤔 Well yeah, there's a way. Consider this property: <br />
 ***base<sup>exp</sup> = base<sup>exp/2</sup> * base<sup>exp/2</sup>***  <br />
-Now a question might arise....what about odd numbers? <br />
-Well....for odd it'll be something like this: <br />
+Now a question might arise....what about ***odd powers***? <br />
+Well....for ***odd powers*** it'll be something like this: <br />
 ***base<sup>exp</sup> = base * base<sup>exp/2</sup> * base<sup>exp/2</sup>***  <br />
+Python code to achieve this would be: <br />
+```python
+def exp(base,power):
+  if power==0:
+    return 1
+  val = exp(base,power/2)
+  return val*val
+```
 

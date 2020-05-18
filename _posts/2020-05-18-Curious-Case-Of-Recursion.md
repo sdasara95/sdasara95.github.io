@@ -162,3 +162,17 @@ Well we have summarized lecture 8. Hang on! We have 3 more to go 😂
 3. Placement of recursive calls
   * ***Recur-then-process*** versus Process-then-recur
 
+### Types of recursion
+Recursion can be broadly classified into procedural and functional. <br>
+* Functional Recursion
+  * Returns result
+* Procedural Recursion
+  * No return value
+  * Task accomplished during recursive call
+
+Drawing a fractal like Sierpinski triangle is an example of procedural recursion. <br>
+We are not returning anything but are achieving the drawing of the fractal during recursion. <br>
+You can visualize Sierpinski Triangle [!python code](https://runestone.academy/runestone/books/published/pythonds/Recursion/pythondsSierpinskiTriangle.html)
+<iframe src="https://trinket.io/embed/python/66d046e959" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+

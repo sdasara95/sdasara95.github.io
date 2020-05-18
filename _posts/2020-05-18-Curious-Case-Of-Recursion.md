@@ -43,5 +43,8 @@ def exp(base,power):
     return 1
   return base * exp(base,power-1)
 ```
-
+How many recursive cases will be called before base case? <br >
+There'll be ***power*** number of recursive calls. Let's say time complexity is O(N) <br >
+Can we make it more efficient? <br />
+🤔 Well yeah, there's a way. Consider this property: <br />
 

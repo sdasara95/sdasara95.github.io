@@ -111,14 +111,14 @@ This classic decrease and conquer problem can be solved both iteratively and rec
 Python code for this would be: <br>
 ```python
 n = len(array)
-def binary_search(array,key,start=0,end=n):
+def binary_search(array,key,start=0,end=n-1):
   mid = (start+end)//2
   if array[mid]==key:
     return True
   if start>end:
     return False
-  if mid>key:
-    binary_search(array,key,start,mid)
+  if array[mid]>key:
+    binary_search(array,key,start,mid-1)
   else:
     binary_search(array,key,mid+1,end)
 ```
@@ -129,6 +129,18 @@ if start>end:
 ```
 When the key **is not** present in the array, we will reach a stage where start=n and end = n+1. In such a case, mid = n. This will make our new start = n+1 and end = n+1 reamains same. This time our mid=n+1 and new start = n+2 but end remains n+1. Hence, the base case gets triggered. <br>
 
-
+### <sup>n</sup>C<sub>k</sub>
+Let's consider the ***N Choose k*** problem. This one can get a bit tricky to formulate a recurrence relation at first. Upon closer inspection we get: <br>
+<sup>n</sup>C<sub>k</sub> = <sup>n-1</sup>C<sub>k</sub> + <sup>n-1</sup>C<sub>k-1</sub> <br>
+To make this clear, consider there are N balls. You have to pick K balls. <br>
+You can take a ball A, there are N-1 balls left. You can pick K balls from N-1 balls remaining or you can include ball A and pick K-1 balls from N-1 remaining balls. <br>
+Python code for this would be: <br>
+```python
+def choose(n,k):
+  if k==0 or k==n:
+    return 1
+  return choose(n-1,k) + choose(n-1,k-1)
+```
+Our base case here is ***no choices remaining at all!*** hence we check k==0 or k==n.
 
 

@@ -172,10 +172,23 @@ Recursion can be broadly classified into procedural and functional. <br>
 
 Drawing a fractal like Sierpinski triangle is an example of procedural recursion. <br>
 We are not returning anything but are achieving the drawing of the fractal during recursion. <br>
-You can copy Sierpinski Triangle [python code](https://runestone.academy/runestone/books/published/pythonds/Recursion/pythondsSierpinskiTriangle.html){:target="_blank"} and paste below to visualize: 
+You can copy Sierpinski Triangle [python code](https://runestone.academy/runestone/books/published/pythonds/Recursion/pythondsSierpinskiTriangle.html){:target="_blank"} and paste below in main.py to visualize: 
 <iframe src="https://trinket.io/embed/python/66d046e959" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 Try changing the order of the recursive calls and you'll see the order of drawing change. This is because the tree is being unrolled differently. <br>
 
 ### Tower of Hanoi
-
+This problem can be envisioned as moving n-1 disks to temporary using destination and moving the n<sup>th</sup> disk to destination. We then move the n-1 disks onto n<sup>th</sup> disk in destination using source as temp. <br>
+The Python code for this would be: <br>
+```python
+moves = 0
+def MoveTower(n,src='source',dst='destination',tmp='temporary'):
+    if n<=0:
+        return
+    global moves
+    moves+=1
+    MoveTower(n-1,src,tmp,dst)
+    print('Move Disk {} from {} to {} using {}'.format(n,src,dst,tmp))
+    MoveTower(n-1,tmp,dst,src)
+```
+This algorithm has exponential complexity. <br>

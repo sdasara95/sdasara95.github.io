@@ -78,6 +78,7 @@ def exp(base,power):
     return base
   return base* exp(base,power-1)
 ```
+
 * Aim for ***simple and clean base case***
   * Don't anticipate ***earlier stopping points***
   * Avoid looking ahead before recursive calls, ***let simple base case handle***
@@ -192,3 +193,9 @@ def MoveTower(n,src='source',dst='destination',tmp='temporary'):
     MoveTower(n-1,tmp,dst,src)
 ```
 This algorithm has exponential time complexity of O(2<sup>N</sup>). <br>
+Time Complexity for a recursive function can always be calculated solving a recurrence relation. <br>
+T(N) = T(N-1) + T(N-1) = 2* T(N-1) <br>
+If we keep continuing till N=0, we get T(N) = 2<sup>N</sup> <br>
+Obviously if we were reducing the input by half instead of one like in binary search, it'll differ. <br>
+T(N) = T(N/2) => 2<sup>x</sup> = N => x = log<sub>2</sub>N <br>
+Hence we say binary search time complexity is O(log<sub>2</sub>N) <br>

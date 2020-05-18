@@ -276,6 +276,9 @@ for i in res:
   print(i)
 ```
 Try running this above. You'll get 24 as the length of our result array which is 4! <br>
+This recursion follows a ***choice pattern*** i.e. make a choice and do recursion and aggregate the results. <br>
 Hmmmm, are you still having difficulty understanding the recursion? It's okay. Recursion is tricky 😄 <br>
 This tree diagram will help you understand better: <br>
-![tree](/assets/img/perm_tree.png){: .mx-auto.d-block :}
+![tree](/assets/img/perm_tree.png){: .mx-auto.d-block :} 
+<br>
+

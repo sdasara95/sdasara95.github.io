@@ -191,4 +191,4 @@ def MoveTower(n,src='source',dst='destination',tmp='temporary'):
     print('Move Disk {} from {} to {} using {}'.format(n,src,dst,tmp))
     MoveTower(n-1,tmp,dst,src)
 ```
-This algorithm has exponential complexity. <br>
+This algorithm has exponential time complexity of O(2<sup>N</sup>). <br>

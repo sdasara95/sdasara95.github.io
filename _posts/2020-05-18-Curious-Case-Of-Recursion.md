@@ -12,14 +12,6 @@ Recursion has always been a tough concept to wrap my head around.  My main flaw 
 [Julie Zelenski's](https://www-cs-faculty.stanford.edu/~zelenski/) Stanford Lectures do an amazing job of making you understand recursion. Her [Programming Abstractions Course (CS106B)](http://web.stanford.edu/class/cs106b/) is an amazing place to start for those struggling with recursion. I like her teaching style, watching her feels like a fellow peer explaining a concept to you thereby, keeping you more engaged in her videos. <br />
 <br />
 
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/gl3emqCuueQ" 
-frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6EVs0BrG57I" frameborder="10" allowfullscreen></iframe>
-
 {% include youtube-embed.html id="gl3emqCuueQ" %} 
 
 

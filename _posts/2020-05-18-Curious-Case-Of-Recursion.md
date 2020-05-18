@@ -246,5 +246,7 @@ def permutation_print(StringSoFar, RemString):
 
 permutation_print('',inp)
 ```
-Try
+Copy this code and ***paste*** it in ***main.py*** and run it
+<iframe src="https://trinket.io/embed/python/66d046e959" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
 

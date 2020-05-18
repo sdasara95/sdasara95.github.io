@@ -36,8 +36,9 @@ She then goes on to define ***Functional Recursion***
   * ***Recursive calls must advance towards base case***
   * Results of recursive calls combined to solve larger version
 </br>
+##### Exponential problem
 base<sup>exp</sup> = base * base<sup>exp-1</sup>  <br />
-Python code to achieve this would be:
+Python code to achieve this would be: <br />
 ```
 def exp(base,power):
   if power==0:

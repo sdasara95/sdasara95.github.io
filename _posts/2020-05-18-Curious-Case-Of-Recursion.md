@@ -272,6 +272,10 @@ def permutation(inp):
 
 res = permutation(inp)
 print(len(res))
-[print(i) for i in res]
+for i in res:
+  print(i)
 ```
 Try running this above. You'll get 24 as the length of our result array which is 4! <br>
+Hmmmm, are you still having difficulty understanding the recursion? It's okay. Recursion is tricky 😄 <br>
+This tree diagram will help you understand better: <br>
+![tree](/assets/img/perm_tree.png){: .mx-auto.d-block :}

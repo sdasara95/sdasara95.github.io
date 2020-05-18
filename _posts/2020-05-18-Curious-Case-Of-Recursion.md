@@ -64,7 +64,7 @@ def exp(base,power):
     return val*val*base
 ```
 If you're a bit confused about this, then think of it as you are ***decomposing for even power always*** <br />
-base<sup>5</sup> ➡ base<sup>4</sup> * base <br />
+***base<sup>5</sup> = base<sup>4</sup> * base*** <br />
 Hence, if odd multiply with an additional base. <br />
 This algorithm will be faster with a time complexity of ***O(log N)*** 
 

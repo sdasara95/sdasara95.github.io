@@ -199,3 +199,11 @@ If we keep continuing till N=0, we get T(N) = 2<sup>N</sup> <br>
 Obviously if we were reducing the input by half instead of one like in binary search, it'll differ. <br>
 T(N) = T(N/2) => 2<sup>x</sup> = N => x = log<sub>2</sub>N <br>
 Hence we say binary search time complexity is O(log<sub>2</sub>N) <br>
+But in the case of ***merge sort*** we need to consider the ***N comparisions*** being made during merge. <br>
+Hence, it's equation would be: <br>
+T(N) = 2* T(N/2) + O(N) where O(N) is the max number of comparisions before merging the divided arrays. <br>
+Solving this following same steps as before gives us, <br>
+T(N) = 2<sup>log<sub>2</sub>N</sup> * log<sub>2</sub>N + O(N) <br>
+T(N) = N log<sub>2</sub>N + O(N) = O(N log<sub>2</sub>N) <br>
+
+

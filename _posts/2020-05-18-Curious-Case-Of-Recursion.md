@@ -207,7 +207,7 @@ T(N) = 2<sup>log<sub>2</sub>N</sup> + &sum;<sub>log<sub>2</sub>N</sub> O(N) <br>
 T(N) = N + O(N) * log<sub>2</sub>N = O(N log<sub>2</sub>N) <br>
 <br>
 Well this math was unexpected 😅 <br>
-Anyways now that we have a basic idea of recursion, let's move on to next lecture about permutations(it's present in current lecture too) and subsets. <br>
+Anyways now that we have a basic idea of recursion, let's move on to next lecture about permutations(it's present in current lecture too) and subsets.
 
 # Permutations and Subsets
 {% include youtube-embed.html id="NdF1QDTRkck" %}
@@ -563,8 +563,6 @@ Boss: Here you go I changed it. Solve it now. <br>
 Delegate: I found the solution. <br>
 <br>
 If you consider your problem as a ***decision-making problem***, it can always be written using ***recursive backtracking***. <br>
-<br>
-
 ### Looking for Patterns
 Most problems have common patterns. If we have find the common pattern and reduce the problem to a problem we know, it makes finding the solution easier. This is why permutation and subset problems are considered as master patterns.
 

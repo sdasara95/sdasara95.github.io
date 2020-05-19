@@ -389,18 +389,74 @@ Instead of using brute-force and trying to explore the entire search space, we c
   * Recursive call makes one decision and recurs on remaining decisions
   
 * ***Backtracking approach***
- * Design recursion function to ***return success/failure***
- * Each call ***choose one option*** and go
- * Recursively proceed and see what happens
- * If it ***works out ,great, otherwise unmake choice and try again***
- * If ***no option worked, return fail*** result which ***triggers backtracking (i.e. un-making earlier decisions)***
+  * Design recursion function to ***return success/failure***
+  * Each call ***choose one option*** and go
+  * Recursively proceed and see what happens
+  * If it ***works out ,great, otherwise unmake choice and try again***
+  * If ***no option worked, return fail*** result which ***triggers backtracking (i.e. un-making earlier decisions)***
 
 * ***Heuristics*** may ***help efficiency***
- * Eliminate dead ends early by pruning
- * Pursue most likely choice first
+  * Eliminate dead ends early by pruning
+  * Pursue most likely choice first
 
+In short, make a choice and go with it. Doesn't work out? Fine. Proceed with the other choices <br>
 
+Almost all backtracking algorithms have the following pseudo-code:
+```
+def Solve(configuration):
+  if (no more choices)  // Base Case
+    return (configuration is goal state)
+  for (all available choices):
+    try one choice c:
+      // solve from here, if it works out, you're done
+    if Solve(configuration with choice c made) return True
+    // If it returns false we unmake our choice
+    unmake choice c
+  
+  return False // tried all choices, no soln found
+```
+The pseudo-code is pretty self explanatory. <br>
 
+### N-Queens Problem
+
+The problem is pretty simple. We have a NxN board. We need to place a queen Q in each column such that no two Q's are in conflict with one another. <br>
+This problem can be solved using recursive backtracking. <br>
+The positions to place in a column are the choices we have at hand. <br>
+If a conflict occurs we check other choices i.e. positions in a column. If all positions are unsatisfiable we return False to previous call initiating backtracking it the parent recursive call. <br>
+If we are able to find one configuration such that the current column is greater than the last column, it means we have achieved a satisfiable configuration for all the columns. <br>
+The python code for this would be:
+```python
+n = 8 
+board = [[' ' for i in range(n)] for j in range(n)]
+
+# We consider rows of our board as columns of actual board. Our board is flipped.
+def recurse_backtrack(board,col=0):
+    if col>n-1:
+        return True
+    
+    for position in range(n):
+        board[col][position] = 'Q'
+        flag = 0
+        # Checking for conflicts with previous columns
+        for prev_col in range(0,col):
+            prev_position = board[prev_col].index('Q')
+            if prev_position == position or abs(prev_position-position)==abs(prev_col-col):
+                flag = 1
+        # If conflict check other choices
+        if flag:
+            board[col][position] = ' '
+            continue
+        # If current choice holds true 
+        if recurse_backtrack(board,col+1): return True
+        # If current choice is false
+        board[col][position] = ' '
+    # Run out of choices
+    return False
+
+recurse_backtrack(board)
+for i in board:
+    print(i)
+```
 
 
 

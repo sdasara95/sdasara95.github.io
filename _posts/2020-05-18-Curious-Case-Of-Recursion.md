@@ -161,7 +161,7 @@ Well we have summarized lecture 8. Hang on! We have 3 more to go 😂
   * **Divide in half, recur on one/both halves**
   * **Make a choice among options, recur on updated state**
 3. Placement of recursive calls
-  * ***Recur-then-process*** versus Process-then-recur
+  * **Recur-then-process** versus Process-then-recur
 
 ### Types of recursion
 Recursion can be broadly classified into procedural and functional. <br>
@@ -217,7 +217,7 @@ Let's first understand what's permutation. <br>
 {% include youtube-embed.html id="HauSvpRVIgc" %} <br>
 ### Permutation Problem
 Let's consider a string: "ABCD" <br>
-It's permutations would be DCBA, CABD, etc. <br>
+It's permutations would be DCBA, CABD, etc. <br />
 **Solving Recursively**
 * What is the output?
 * Choose a letter and append it to output from input

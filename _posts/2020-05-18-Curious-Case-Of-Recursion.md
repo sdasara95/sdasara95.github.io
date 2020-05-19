@@ -7,7 +7,7 @@ gh-badge: [follow]
 tags: [recursion]
 comments: true
 ---
-Recursion has always been a tough concept to wrap my head around.  My main flaw in trying to understand it was not visualising it as a ***tree unrolling***. Maybe my obsession with imperative programming paradigm could be to blame for this.  Ever since I started to visualise recursion as a ***method*** to ***brute-force*** the ***search space*** using ***clones***, I have been able to write recursive code better. <br />
+Recursion has always been a tough concept to wrap my head around.  My main flaw in trying to understand it was not visualising it as a **tree unrolling**. Maybe my obsession with imperative programming paradigm could be to blame for this.  Ever since I started to visualise recursion as a ***method*** to ***brute-force*** the ***search space*** using ***clones***, I have been able to write recursive code better. <br />
 <br />
 [Julie Zelenski's](https://www-cs-faculty.stanford.edu/~zelenski/) Stanford Lectures do an amazing job of making you understand recursion. Her [Programming Abstractions Course (CS106B)](http://web.stanford.edu/class/cs106b/) is an amazing place to start for those struggling with recursion or computer science fundamentals in general. Her lectures are quite engaging and she succintly explains the core concepts. The videos are available on [YouTube](https://www.youtube.com/watch?v=kMzH3tfP6f8). She explains recursion in ***videos 8-11***. <br />
 <br />
@@ -217,7 +217,7 @@ Let's first understand what's permutation. <br>
 {% include youtube-embed.html id="HauSvpRVIgc" %} <br>
 ### Permutation Problem
 Let's consider a string: "ABCD" <br>
-It's permutations would be DCBA, CABD, etc. 
+It's permutations would be DCBA, CABD, etc. <br>
 ***Solving Recursively***
 * What is the output?
 * Choose a letter and append it to output from input

@@ -451,7 +451,7 @@ def recurse_backtrack(board,col=0):
             continue
         # If current choice holds true 
         if recurse_backtrack(board,col+1): return True
-        # If current choice is false
+        # If current choice is false remove Queen
         board[col][position] = ' '
     # Run out of choices
     return False
@@ -460,7 +460,9 @@ recurse_backtrack(board)
 for i in board:
     print(i)
 ```
-
+Try running it in the above interpreter. <br>
+You'll get the same answer every time you run it because the order of tree unrolling will remain constant. <br>
+You can change the ordering of the positions in for loop to get a different answer. <br>
 
 
 

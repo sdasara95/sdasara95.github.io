@@ -376,6 +376,29 @@ Every possible option is explored. <br>
 Time Complexity <br>
 Subset: 2<sup>N</sup> <br>
 Permutation: N! <br>
+<br>
+When search space is too big, it takes forever if we use brute-force. <br>
+We can tackle this using the concept of ***recursive backtracking***.
+
+### Recursive Backtracking
+Instead of using brute-force and trying to explore the entire search space, we can consider some cases and check each case. If the check fails, we come back and consider the next case. 
+
+* Cast problem in terms of decision points
+  * Identify the decisions to be made
+  * Identify options available for each decision
+  * Recursive call makes one decision and recurs on remaining decisions
+  
+* ***Backtracking approach***
+ * Design recursion function to ***return success/failure***
+ * Each call ***choose one option*** and go
+ * Recursively proceed and see what happens
+ * If it ***works out ,great, otherwise unmake choice and try again***
+ * If ***no option worked, return fail*** result which ***triggers backtracking (i.e. un-making earlier decisions)***
+
+* ***Heuristics*** may ***help efficiency***
+ * Eliminate dead ends early by pruning
+ * Pursue most likely choice first
+
 
 
 

@@ -4,7 +4,7 @@ title: Curious case of recursion
 subtitle: Trying to understand this beautiful concept
 gh-repo: sdasara95/
 gh-badge: [follow]
-tags: [recursion, dp]
+tags: [recursion]
 comments: true
 ---
 Recursion has always been a tough concept to wrap my head around.  My main flaw in trying to understand it was not visualising it as a ***tree unrolling***. Maybe my obsession with imperative programming paradigm could be to blame for this.  Ever since I started to visualise recursion as a ***method*** to ***brute-force*** the ***search space*** using ***clones***, I have been able to write recursive code better. <br />
@@ -463,6 +463,124 @@ for i in board:
 Try running it in the above interpreter. <br>
 You'll get the same answer every time you run it because the order of tree unrolling will remain constant. <br>
 You can change the ordering of the positions in for loop to get a different answer. <br>
+
+Yawn.....Almost finished 🥱. One video left. Let's finish 💪 <br>
+
+# Conclusion
+{% include youtube-embed.html id="p-gpaIGRCQI" %} 
+### Little More Backtracking
+
+Julie discusses about sudoku solver. She talks about a brute force recursive solver that explores the entire search space. It is a classic backtracking problem. We just need to handle the domain-specific cases which is checking if there is no conflict in row, column or subgrid of the sudoku. <br>
+The Python implementation of the problem would be: <br>
+```python
+n = 9
+board = [[-1 for i in range(n)] for j in range(n)]
+
+[print(i) for i in board]
+
+while True:
+    print('Enter Row,Col,Value! Type quit to quit!')
+    a = input()
+    if a == 'quit':
+        break
+    a = a.split(',')
+    if len(a)<3 or len(a)>3:
+        print('Enter 3 values separated by ,')
+        continue
+    a = [int(i) for i in a]
+    row,col,value = a[0],a[1],a[2]
+    if row in range(n) and col in range(n) and value in range(10):
+        board[row][col] = value
+        [print(i) for i in board]
+    else:
+        print('Enter valid values')
+        
+org_board = board.copy()
+        
+def subgrid_check(board,value,row,col):
+    row_factor = row//3
+    col_factor = col//3
+    row_square_start = row_factor*3
+    row_square_end = row_square_start+3
+    col_square_start = col_factor*3
+    col_square_end = col_square_start+3
+    vals = [board[i][j] for i in range(row_square_start,row_square_end) for j in range(col_square_start,col_square_end)]
+    if value in vals:
+        return False
+    else:
+        return True
+    
+def col_check(board,value,col):
+    vals = [i[col] for i in board]
+    if value in vals:
+        return False
+    else:
+        return True
+
+def row_check(board,value,row):
+    vals = [i for i in board[row]]
+    if value in vals:
+        return False
+    else:
+        return True
+
+def sudoku_solver(board,number=0):
+    
+    n=len(board)
+    total = n**2-1
+    if number>total:
+        return True
+    
+    row = number//n
+    col = number%n
+    value = board[row][col]
+
+    if not value==-1:
+        return sudoku_solver(board,number+1)
+    
+    for i in range(1,10):
+        if col_check(board,i,col) and row_check(board,i,row) and subgrid_check(board,i,row,col):
+            board[row][col] = i
+            if sudoku_solver(board,number+1): 
+                return True
+            else: 
+                board[row][col] = -1
+    return False
+
+res = sudoku_solver(board,0)
+
+for i in board:
+    print(i)
+```
+Copy and run it below <br>
+<iframe src="https://trinket.io/embed/python/66d046e959" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+Think of backtracking as a conversation between a boss and their delegate over a puzzle. <br>
+Boss: Hey I'm giving you this, solve it for for me <br>
+Delegate: I tried everything, nothing worked <br>
+Boss: Oh Okay, let me check. Maybe I gave you something wrong. Let me check it from my end. <br>
+Boss: Here you go I changed it. Solve it now. <br>
+Delegate: I found the solution. <br>
+<br>
+If you consider your problem as a ***decision-making problem***, it can always be written using ***recursive backtracking***. <br>
+<br>
+
+### Looking for Patterns
+Most problems have common patterns. If we have find the common pattern and reduce the problem to a problem we know, it makes finding the solution easier. This is why permutation and subset problems are considered as master patterns.
+
+* Knapsack Problem ➡ Subset
+* Travelling Salesman ➡ Permutation
+* Dividing into teams with similar IQ ➡ Subset
+* Finding longest word from sequence of letters ➡ Subset + Permutation
+
+👏🙌 Well we finished it! That was a lot to digest if you lost touch with recursion or are refreshing it. <br>
+<br>
+Practicing recursion is the best way to get better at it as there are many intricacies involved with each problem which we can learn to solve efficiently only through repeated practice. However the concepts we explored form a crucial foundation for us. Just remember that recursion is ideal only when our input size is reducing each call till we are left with nothing at the base case. There will be cases where it makes no sense to solve with recursion. A classic example would be BFS implementation with recursion. BFS is not inherently recursive hence, no point implementing it as a pure recursive call without any auxilliary data structure. <br>
+Recursion is all about decision making with given options and calling a clone to do the same on reduced search space. <br>
+<br>
+Well that's it for now! I will keep writing such technical blogs. Stay tuned 🔍. 👋
+
+
 
 
 

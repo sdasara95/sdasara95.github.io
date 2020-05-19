@@ -574,8 +574,7 @@ Most problems have common patterns. If we have find the common pattern and reduc
 Practicing recursion is the best way to get better at it as there are many intricacies involved with each problem which we can learn to solve efficiently only through repeated practice. However the concepts we explored form a crucial foundation for us. Just remember that recursion is ideal only when our input size is reducing each call till we are left with nothing at the base case. There will be cases where it makes no sense to solve with recursion. A classic example would be BFS implementation with recursion. BFS is not inherently recursive hence, no point implementing it as a pure recursive call without any auxilliary data structure. <br>
 Recursion is all about decision making with given options and calling a clone to do the same on reduced search space. <br>
 <br>
-👏🙌 Well we finished it! That was a lot to digest if you lost touch with recursion or are refreshing it. <br>
-I will keep writing such technical blogs. Stay tuned 🔍. 👋
+👏🙌 Well we finished it! That was a lot to digest if you lost touch with recursion or are refreshing it. I will keep writing such technical blogs. Stay tuned 🔍. 👋
 
 
 

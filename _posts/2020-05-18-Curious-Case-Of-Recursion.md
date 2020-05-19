@@ -7,11 +7,11 @@ gh-badge: [follow]
 tags: [recursion]
 comments: true
 ---
-Recursion has always been a tough concept to wrap my head around.  My main flaw in trying to understand it was not visualising it as a **tree unrolling**. Maybe my obsession with imperative programming paradigm could be to blame for this.  Ever since I started to visualise recursion as a ***method*** to ***brute-force*** the ***search space*** using ***clones***, I have been able to write recursive code better. <br />
+Recursion has always been a tough concept to wrap my head around.  My main flaw in trying to understand it was not visualising it as a **tree unrolling**. Maybe my obsession with imperative programming paradigm could be to blame for this.  Ever since I started to visualise recursion as a **method** to **brute-force** the **search space** using **clones**, I have been able to write recursive code better. <br />
 <br />
-[Julie Zelenski's](https://www-cs-faculty.stanford.edu/~zelenski/) Stanford Lectures do an amazing job of making you understand recursion. Her [Programming Abstractions Course (CS106B)](http://web.stanford.edu/class/cs106b/) is an amazing place to start for those struggling with recursion or computer science fundamentals in general. Her lectures are quite engaging and she succintly explains the core concepts. The videos are available on [YouTube](https://www.youtube.com/watch?v=kMzH3tfP6f8). She explains recursion in ***videos 8-11***. <br />
+[Julie Zelenski's](https://www-cs-faculty.stanford.edu/~zelenski/) Stanford Lectures do an amazing job of making you understand recursion. Her [Programming Abstractions Course (CS106B)](http://web.stanford.edu/class/cs106b/) is an amazing place to start for those struggling with recursion or computer science fundamentals in general. Her lectures are quite engaging and she succintly explains the core concepts. The videos are available on [YouTube](https://www.youtube.com/watch?v=kMzH3tfP6f8). She explains recursion in **videos 8-11**. <br />
 <br />
-This blog shall go through each of her recursion videos and ***summarize*** the ***core ideas*** through my Python implementation of the algorithms.
+This blog shall go through each of her recursion videos and **summarize** the **core ideas** through my Python implementation of the algorithms.
 
 # Introduction
 {% include youtube-embed.html id="gl3emqCuueQ" %} 
@@ -20,22 +20,22 @@ This blog shall go through each of her recursion videos and ***summarize*** the 
 * Solve problems using co-workers or **CLONES** 🔑 <br />
 * For problems which exhibit **Self-Similarity** 👈 <br />
 
-We spawn ***smaller instances*** of the ***same function*** doing the ***same task*** on ***smaller input/ problem***. <br />
-***Base Case*** is when the ***input/problem*** is ***so small*** that we ***don't need*** another task repeating ***clone*** <br />
+We spawn **smaller instances** of the **same function** doing the **same task** on **smaller input/ problem**. <br />
+**Base Case** is when the **input/problem** is **so small** that we **don't need** another task repeating **clone** <br />
 <br />
-She then goes on to define ***Functional Recursion*** 
+She then goes on to define **Functional Recursion** 
 * Function that returns answer or result
   * Outer problem result ⬅ Result from smaller same problem
 * Base case
   * Simplest version of problem
-  * Can be ***directly solved***
+  * Can be **directly solved**
 * Recursive case
-  * Make ***call to self*** to get ***results for smaller, simpler version***
-  * ***Recursive calls must advance towards base case***
+  * Make **call to self** to get **results for smaller, simpler version**
+  * **Recursive calls must advance towards base case**
   * Results of recursive calls combined to solve larger version
 
 ### Exponential problem 
-***base<sup>exp</sup> = base * base<sup>exp-1</sup>***  <br />
+**base<sup>exp</sup> = base * base<sup>exp-1</sup>**  <br />
 Python code to achieve this would be: <br />
 ```python
 def exp(base,power):
@@ -44,13 +44,13 @@ def exp(base,power):
   return base * exp(base,power-1)
 ```
 How many recursive cases will be called before base case? <br >
-There'll be ***power*** number of recursive calls. Let's say time complexity is ***O(N)*** <br >
+There'll be **power** number of recursive calls. Let's say time complexity is ***O(N)*** <br >
 Can we make it more efficient? <br />
 🤔 Well yeah, there's a way. Consider this property: <br />
-***base<sup>exp</sup> = base<sup>exp/2</sup> * base<sup>exp/2</sup>***  <br />
-Now a question might arise....what about ***odd powers***? <br />
-Well....for ***odd powers*** it'll be something like this: <br />
-***base<sup>exp</sup> = base * base<sup>exp/2</sup> * base<sup>exp/2</sup>***  <br />
+**base<sup>exp</sup> = base<sup>exp/2</sup> * base<sup>exp/2</sup>**  <br />
+Now a question might arise....what about **odd powers**? <br />
+Well....for **odd powers** it'll be something like this: <br />
+**base<sup>exp</sup> = base * base<sup>exp/2</sup> * base<sup>exp/2</sup>**  <br />
 *Remember that we are considering absolute division of the powers here* <br />
 Python code to achieve this would be: <br />
 ```python
@@ -63,12 +63,12 @@ def exp(base,power):
   else:
     return val*val*base
 ```
-If you're a bit confused about this, then think of it as you are ***decomposing for even power always*** <br />
-***base<sup>5</sup> = base<sup>4</sup> * base*** <br />
+If you're a bit confused about this, then think of it as you are **decomposing for even power always** <br />
+**base<sup>5</sup> = base<sup>4</sup> * base** <br />
 Hence, if odd multiply with an additional base. <br />
 This algorithm will be faster with a time complexity of ***O(log N)*** <br />
 <br />
-Julie cautions against ***arm's length recursion***. <br /> 
+Julie cautions against **arm's length recursion**. <br /> 
 An example would be: <br />
 ```python
 def exp(base,power):
@@ -79,11 +79,11 @@ def exp(base,power):
   return base* exp(base,power-1)
 ```
 
-* Aim for ***simple and clean base case***
-  * Don't anticipate ***earlier stopping points***
-  * Avoid looking ahead before recursive calls, ***let simple base case handle***
+Aim for **simple and clean base case**
+* Don't anticipate **earlier stopping points**
+* Avoid looking ahead before recursive calls, **let simple base case handle**
 
-***Just let the code fall through*** <br />
+**Just let the code fall through** <br />
 
 All recursive problems have a pattern. Our goal should be to find that pattern and use clones to solve the problem. <br />
 
@@ -104,7 +104,7 @@ def palindrome(string):
     return False
 ```
 One way of formulating a recursive solution is to get a base case and test it, then consider one layer out( one recursive call out ). <br />
-You can think as it works for 0, it works for 1, it works for 2, ***take a leap of faith*** ,it works for n, it works for n+1. <br />
+You can think as it works for 0, it works for 1, it works for 2, **take a leap of faith** ,it works for n, it works for n+1. <br />
 This idea is very similar to bottom-up dynamic programming. <br />
 
 ### Binary Search
@@ -131,7 +131,7 @@ if start>end:
 When the key **is not** present in the array, we will reach a stage where start=n and end = n+1. In such a case, mid = n. This will make our new start = n+1 and end = n+1 reamains same. This time our mid=n+1 and new start = n+2 but end remains n+1. Hence, the base case gets triggered. <br>
 
 ### <sup>n</sup>C<sub>k</sub>
-Let's consider the ***N Choose k*** problem. This one can get a bit tricky to formulate a recurrence relation at first. Upon closer inspection we get: <br>
+Let's consider the **N Choose k** problem. This one can get a bit tricky to formulate a recurrence relation at first. Upon closer inspection we get: <br>
 <sup>n</sup>C<sub>k</sub> = <sup>n-1</sup>C<sub>k</sub> + <sup>n-1</sup>C<sub>k-1</sub> <br>
 To make this clear, consider there are N balls. You have to pick K balls. <br>
 You can take a ball A, there are N-1 balls left. You can pick K balls from N-1 balls remaining or you can include ball A and pick K-1 balls from N-1 remaining balls. <br>
@@ -142,7 +142,7 @@ def choose(n,k):
     return 1
   return choose(n-1,k) + choose(n-1,k-1)
 ```
-Our base case here is ***no choices remaining at all!*** hence we check k==0 or k==n. <br>
+Our base case here is **no choices remaining at all!** hence we check k==0 or k==n. <br>
 Consider picking k items as a task, when k=0 it means we have picked k items and have finished the task. Hence we return 1 to signify we finished one task. There'll be many such task and we are interested in finding the total number of tasks i.e. combinations.
 
 Well we have summarized lecture 8. Hang on! We have 3 more to go 😂
@@ -156,10 +156,10 @@ Well we have summarized lecture 8. Hang on! We have 3 more to go 😂
     * Solve problem from subproblems
   * Identify base case
     * Simplest possible case, easily solvable, recursion advances to it
-2.  ***Common Patterns to solve***
-  * ***Handle first and/or last, recur on remaining***
-  * ***Divide in half, recur on one/both halves***
-  * ***Make a choice among options, recur on updated state***
+2.  **Common Patterns to solve**
+  * **Handle first and/or last, recur on remaining**
+  * **Divide in half, recur on one/both halves**
+  * **Make a choice among options, recur on updated state**
 3. Placement of recursive calls
   * ***Recur-then-process*** versus Process-then-recur
 
@@ -199,7 +199,7 @@ If we keep continuing till N=0, we get T(N) = 2<sup>N</sup> <br>
 Obviously if we were reducing the input by half instead of one like in binary search, it'll differ. <br>
 T(N) = T(N/2) => 2<sup>x</sup> = N => x = log<sub>2</sub>N <br>
 Hence we say binary search time complexity is O(log<sub>2</sub>N) <br>
-But in the case of ***merge sort*** we need to consider the ***N comparisions*** being made during merge. <br>
+But in the case of **merge sort** we need to consider the **N comparisions** being made during merge. <br>
 Hence, it's equation would be: <br>
 T(N) = 2* T(N/2) + O(N) where O(N) is the max number of comparisions before merging the divided arrays. <br>
 Solving this following same steps as before gives us, <br>
@@ -211,14 +211,14 @@ Anyways now that we have a basic idea of recursion, let's move on to next lectur
 
 # Permutations and Subsets
 {% include youtube-embed.html id="NdF1QDTRkck" %}
-When I started off this post, I wrote how recursion is a way to call the same function to achieve bruteforce. If you look at ***most recursive problems***, they are actually a variant of ***finding permutations*** or ***finding subsets***. <br>
-Now I know some of you might get confused with ***permutations*** or conflate it with ***combinations***. 😵 <br>
+When I started off this post, I wrote how recursion is a way to call the same function to achieve bruteforce. If you look at **most recursive problems**, they are actually a variant of **finding permutations** or **finding subsets**. <br>
+Now I know some of you might get confused with **permutations** or conflate it with **combinations**. 😵 <br>
 Let's first understand what's permutation. <br>
 {% include youtube-embed.html id="HauSvpRVIgc" %} <br>
 ### Permutation Problem
 Let's consider a string: "ABCD" <br>
 It's permutations would be DCBA, CABD, etc. <br>
-***Solving Recursively***
+**Solving Recursively**
 * What is the output?
 * Choose a letter and append it to output from input
 * How do we ensure each letter is used once?
@@ -245,7 +245,7 @@ def permutation_print(StringSoFar, RemString):
 
 permutation_print('',inp)
 ```
-Copy this code and ***paste*** it in ***main.py*** and run it
+Copy this code and **paste** it in **main.py** and run it
 <iframe src="https://trinket.io/embed/python/66d046e959" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 Now you may be thinking, what if I want to store the values. I want to verify if I got the correct answer by checking the length of the array. 😏 Not an issue. We can return lists instead of printing.
@@ -275,7 +275,7 @@ for i in res:
   print(i)
 ```
 Try running this above. You'll get 24 as the length of our result array which is 4! <br>
-A question might arise now....what if input was ***aba*** i.e. input consists of repeating characters. We will repeated computation again on already visited characters. In that case our above algorithm will give duplicates like two aba instead of one. What do we do? Well we can put a condition where we check that if we have encountered a character already we skip through if we encounter it again. <br>
+A question might arise now....what if input was **aba** i.e. input consists of repeating characters. We will repeated computation again on already visited characters. In that case our above algorithm will give duplicates like two aba instead of one. What do we do? Well we can put a condition where we check that if we have encountered a character already we skip through if we encounter it again. <br>
 The modified Python code would be: <br>
 ```python
 inp = 'aba'
@@ -308,19 +308,19 @@ for i in res:
   print(i)
 ```
 The same logic can be extended to list as input. <br>
-This recursion follows a ***choice pattern*** i.e. make a choice and do recursion and aggregate the results. <br>
+This recursion follows a **choice pattern** i.e. make a choice and do recursion and aggregate the results. <br>
 Hmmmm, are you still having difficulty understanding the recursion? It's okay. Recursion is tricky 😄 <br>
 This tree diagram will help you understand better: <br>
 ![tree](/assets/img/perm_tree_new.png){: .mx-auto.d-block :} 
 <br>
 
-Permutation is a ***master pattern*** of recursion as there are many problems which can be reduced to a permutation problem. <br>
-Let's explore the other ***master pattern*** : ***subsets***
+Permutation is a **master pattern** of recursion as there are many problems which can be reduced to a permutation problem. <br>
+Let's explore the other **master pattern** : **subsets**
 
 ### Subset Problem
 Let's consider a string: ABC <br>
 It's subsets would be ABC, AB, BC, CA, A, B, C 
-***Solving Recursively***
+**Solving Recursively**
 * What is the output?
 * Separate an element from the input
 * Call adding element to output (Subsets with element)
@@ -363,7 +363,7 @@ def subset_list(string):
 print(subset_list(inp))
 ```
 
-The 🔑 here is the base-case. ***return ['']*** is important to get individual character subsets. You can run the code in the interpreter below. <br>
+The 🔑 here is the base-case. **return ['']** is important to get individual character subsets. You can run the code in the interpreter below. <br>
 <iframe src="https://trinket.io/embed/python/66d046e959" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 The following tree diagram will help you understand this better:
@@ -371,16 +371,16 @@ The following tree diagram will help you understand this better:
 ![tree](/assets/img/subset_tree.png){: .mx-auto.d-block :}
 
 Subset has just one or two recursive calls whereas we have a **for loop** for **permutation**. <br>
-**Permutation** and **Combination** are ***master patterns***. Mastering these will help you solve many problems. <br>
+**Permutation** and **Combination** are **master patterns**. Mastering these will help you solve many problems. <br>
 These algorithms are examples of **Exhaustive Search**. <br>
-They are about choice. They have deep and wide trees. ***Depth*** is ***number of decisions made***. ***Width*** is ***branching*** i.e ***number of options available per decision***. <br>
+They are about choice. They have deep and wide trees. **Depth** is **number of decisions made**. **Width** is **branching** i.e **number of options available per decision**. <br>
 Every possible option is explored. <br>
 Time Complexity <br>
 Subset: 2<sup>N</sup> <br>
 Permutation: N! <br>
 <br>
 When search space is too big, it takes forever if we use brute-force. <br>
-We can tackle this using the concept of ***recursive backtracking***.
+We can tackle this using the concept of **recursive backtracking**.
 
 ### Recursive Backtracking
 Instead of using brute-force and trying to explore the entire search space, we can consider some cases and check each case. If the check fails, we come back and consider the next case. 
@@ -390,14 +390,14 @@ Instead of using brute-force and trying to explore the entire search space, we c
   * Identify options available for each decision
   * Recursive call makes one decision and recurs on remaining decisions
   
-* ***Backtracking approach***
-  * Design recursion function to ***return success/failure***
-  * Each call ***choose one option*** and go
+* **Backtracking approach**
+  * Design recursion function to **return success/failure**
+  * Each call **choose one option** and go
   * Recursively proceed and see what happens
-  * If it ***works out ,great, otherwise unmake choice and try again***
-  * If ***no option worked, return fail*** result which ***triggers backtracking (i.e. un-making earlier decisions)***
+  * If it **works out ,great, otherwise unmake choice and try again**
+  * If **no option worked, return fail** result which **triggers backtracking (i.e. un-making earlier decisions)**
 
-* ***Heuristics*** may ***help efficiency***
+* **Heuristics** may **help efficiency**
   * Eliminate dead ends early by pruning
   * Pursue most likely choice first
 
@@ -562,7 +562,7 @@ Boss: Oh Okay, let me check. Maybe I gave you something wrong. Let me check it f
 Boss: Here you go I changed it. Solve it now. <br>
 Delegate: I found the solution. <br>
 <br>
-If you consider your problem as a ***decision-making problem***, it can always be written using ***recursive backtracking***. <br>
+If you consider your problem as a **decision-making problem**, it can always be written using **recursive backtracking**. <br>
 ### Looking for Patterns
 Most problems have common patterns. If we have find the common pattern and reduce the problem to a problem we know, it makes finding the solution easier. This is why permutation and subset problems are considered as master patterns.
 

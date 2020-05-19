@@ -214,7 +214,7 @@ Anyways now that we have a basic idea of recursion, let's move on to next lectur
 When I started off this post, I wrote how recursion is a way to call the same function to achieve bruteforce. If you look at **most recursive problems**, they are actually a variant of **finding permutations** or **finding subsets**. <br>
 Now I know some of you might get confused with **permutations** or conflate it with **combinations**. 😵 <br>
 Let's first understand what's permutation. <br>
-{% include youtube-embed.html id="HauSvpRVIgc" %} <br>
+{% include youtube-embed.html id="HauSvpRVIgc" %} 
 ### Permutation Problem
 Let's consider a string: "ABCD" <br>
 It's permutations would be DCBA, CABD, etc. <br />

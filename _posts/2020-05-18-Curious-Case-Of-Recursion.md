@@ -328,7 +328,43 @@ It's subsets would be ABC, AB, BC, CA, A, B, C
 * What is the base case?
 
 Have we seen similar problem before? 🤔 <br>
-Well....same patterns often resurface....<sup>n</sup>C<sub>k</sub> 😵 <br>
+Well....same patterns often resurface....<sup>n</sup>C<sub>k</sub> 😵 <br> 
+Just as before, we will focus on both the procedural and functional implementations of the solution. <br>
+
+```python
+inp = 'abcd'
+def subset(string_so_far, rem_string):
+  if len(rem_string)==0:
+    print(string_so_far)  
+    return
+  char = rem_string[0]
+  subset(string_so_far+char,rem_string[1:])
+  subset(string_so_far,rem_string[1:])
+
+subset('',inp)
+```
+Functional recursion to store all the subsets in a list consists of add the current character to all subsets of remaining string. <br>
+Python implementation for it would be: <br>
+```python
+inp = 'abcd'
+def subset_list(string):
+    if len(string)==0:
+        return ['']
+    
+    first_char = string[0]
+    rem_string = string[1:]
+    print(first_char,rem_string)
+    child_subsets = subset_list(rem_string)
+    curr_subsets = []
+    curr_subsets = [first_char + i for i in child_subsets]
+    curr_subsets.extend(child_subsets)
+    
+    return curr_subsets
+
+print(subset_list(inp))
+```
+
+The 🔑 here is the base-case. ***return /['']*** is important
 
 
 

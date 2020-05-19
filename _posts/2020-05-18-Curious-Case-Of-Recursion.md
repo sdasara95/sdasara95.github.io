@@ -353,7 +353,6 @@ def subset_list(string):
     
     first_char = string[0]
     rem_string = string[1:]
-    print(first_char,rem_string)
     child_subsets = subset_list(rem_string)
     curr_subsets = []
     curr_subsets = [first_char + i for i in child_subsets]
@@ -364,7 +363,10 @@ def subset_list(string):
 print(subset_list(inp))
 ```
 
-The 🔑 here is the base-case. ***return /['']*** is important
+The 🔑 here is the base-case. ***return ['']*** is important to get individual character subsets. You can run the code in the interpreter below. <br>
+<iframe src="https://trinket.io/embed/python/66d046e959" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+
 
 
 

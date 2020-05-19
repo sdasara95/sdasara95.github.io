@@ -365,10 +365,12 @@ print(subset_list(inp))
 
 The 🔑 here is the base-case. ***return ['']*** is important to get individual character subsets. You can run the code in the interpreter below. <br>
 <iframe src="https://trinket.io/embed/python/66d046e959" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
 The following tree diagram will help you understand this better:
+
 ![tree](/assets/img/subset_tree.png){: .mx-auto.d-block :}
+
 Subset has just one or two recursive calls whereas we have a **for loop** for **permutation**. <br>
-<br>
 **Permutation** and **Combination** are ***master patterns***. Mastering these will help you solve many problems. <br>
 These algorithms are examples of **Exhaustive Search**. <br>
 They are about choice. They have deep and wide trees. ***Depth*** is ***number of decisions made***. ***Width*** is ***branching*** i.e ***number of options available per decision***. <br>
@@ -430,6 +432,7 @@ n = 8
 board = [[' ' for i in range(n)] for j in range(n)]
 
 # We consider rows of our board as columns of actual board. Our board is flipped.
+# We keep track of the current column with col parameter
 def recurse_backtrack(board,col=0):
     if col>n-1:
         return True

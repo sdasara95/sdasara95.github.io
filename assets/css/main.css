@@ -478,6 +478,28 @@ footer .footer-custom-content {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 }
+/* --- Google Maps --- */
+.map-container {
+  height: 200px;
+  width: 150px;
+  max-width: 500px; 
+  max-height: 500px; 
+  margin: 0px auto;
+  overflow: auto;
+  resize: both;
+}
+
+@media (min-width: 768px) {
+.map-container {
+  height: 400px;
+  width: 300px;
+  max-width: 500px; 
+  max-height: 500px; 
+  margin: 0px auto;
+  overflow: auto;
+  resize: both;
+}
+}
 
 /* --- YouTube --- */
  

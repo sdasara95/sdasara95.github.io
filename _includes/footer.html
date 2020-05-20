@@ -14,12 +14,30 @@
                   </div> -->
        </div>
 <!--       <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5jemg9x4z6e&amp;m=1&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"></script> -->
-      <div class="col-xl-8 col-lg-10 ">
+      <div class="col-xl-4 col-lg-10 ">
       {% include social-networks-links.html %} 
       {% if page.footer-extra %}
         <div class="footer-custom-content">
           {% include {{ page.footer-extra }} %}
         </div>
+      </div>
+      <div class="col-xl-4 col-lg-10 " style="max-width: 341px; max-height: 341px; margin: 0px auto;">
+      <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        var uluru = {lat: 39.170474, lng: -86.492144};
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 4, center: uluru});
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({position: uluru, map: map});
+      }
+          </script>
+          <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDH5UmWp09meWnoI1L9mDoV0Wpapfy2d-A&callback=initMap">
+          </script>            
+      </div>
       {% endif %}
         
       <p class="copyright text-muted">

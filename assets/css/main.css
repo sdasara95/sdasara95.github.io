@@ -487,6 +487,7 @@ footer .map-container iframe{
   margin: 0px auto;
   overflow: auto;
   resize: both;
+  text-align: center
 }
 
 @media (min-width: 768px) {

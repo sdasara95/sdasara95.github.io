@@ -498,7 +498,7 @@ footer .map-container iframe{
   display: block;
 }
 
-@media (min-width: 768px){
+@media (min-width: 600px){
 footer .map-container iframe{
   padding-top: 20px;
   width: 500px;

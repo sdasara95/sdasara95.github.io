@@ -14,7 +14,7 @@ paginate: 6
 paginate_path: "/blog/page:num/"
 
 # Your name to show in the footer
-author: Satya Dasara
+author: Satyaraja Dasara
 
 # --- List of links in the navigation bar --- #
 

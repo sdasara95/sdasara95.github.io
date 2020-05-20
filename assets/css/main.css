@@ -479,7 +479,7 @@ footer .footer-custom-content {
 }
 }
 /* --- Google Maps --- */
-.map-container {
+.map-container iframe{
   height: 200px;
   width: 150px;
   max-width: 500px; 
@@ -490,9 +490,9 @@ footer .footer-custom-content {
 }
 
 @media (min-width: 768px) {
-.map-container {
-  height: 400px;
-  width: 300px;
+.map-container iframe{
+  height: 350px;
+  width: 250px;
   max-width: 500px; 
   max-height: 500px; 
   margin: 0px auto;

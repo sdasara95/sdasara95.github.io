@@ -438,7 +438,8 @@ footer .footer-custom-content {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) { */
+@media (min-width: 1200px) {
   footer {
     padding: 3.125rem 0;
   }
@@ -490,7 +491,8 @@ footer .map-container iframe{
   text-align: center
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) { */
+@media (min-width: 1200px) {
 footer .map-container iframe{
   width: 600px;
   height: 400px;

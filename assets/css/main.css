@@ -265,7 +265,8 @@ img {
 
 .navbar-custom .nav-item.dropdown .dropdown-menu .dropdown-item:hover,
 .navbar-custom .nav-item.dropdown .dropdown-menu .dropdown-item:focus {
-  color: {{ site.navbar-text-col | default: "#404040" }};
+/*   color: {{ site.navbar-text-col | default: "#404040" }}; */
+  color: "#F5F5F5";
 }
 
 .navbar-custom .nav-item.dropdown .dropdown-menu {

@@ -263,6 +263,11 @@ img {
   background: rgba(0, 0, 0, 0.2);
 }
 
+.navbar-custom .nav-item.dropdown .dropdown-menu .dropdown-item:hover,
+.navbar-custom .nav-item.dropdown .dropdown-menu .dropdown-item:focus {
+  color: {{ site.navbar-text-col | default: "#404040" }};
+}
+
 .navbar-custom .nav-item.dropdown .dropdown-menu {
   min-width: 0;
   margin-top: 0;

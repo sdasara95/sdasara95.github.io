@@ -21,11 +21,12 @@ author: Satyaraja Dasara
 navbar-links:
   Home: "https://sdasara95.github.io/"
   About: "aboutme"
-  Resume: "/Satya_Dasara_Data_Scientist_Resume.pdf"
+  Resume: "/Satya_Dasara_Resume_DS.pdf"
   Projects: https://github.com/sdasara95
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
+    - Math/Stats: "mathstats"
+    - Algos/DS: "algos"
+    - Code Editor: "https://www.markdowntutorial.com/"
     
 nav-search: search
 

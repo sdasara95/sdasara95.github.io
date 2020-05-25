@@ -22,3 +22,4 @@ I am a data scientist with **M.S. in Data Science** from **IU Bloomington**. I h
 <br />
 💗 Data Wrangling, Python, Statistics, Computer Vision <br />
 <br />
+

@@ -13,4 +13,4 @@ subtitle: Some useful links I like to refer
 * [SQL Complete Tutorial](https://mode.com/sql-tutorial/)
 * [Kaggle 😅](https://www.kaggle.com/)
 * [Analytics Vidhya](https://www.analyticsvidhya.com/)
-* []
+* [Numerica Intuition](https://datasciencecareermap.com/2019/05/17/why-numerical-intuition-is-the-most-important-data-science-skill-i-screen-for/)

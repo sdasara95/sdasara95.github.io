@@ -2,7 +2,7 @@
 layout: page
 subtitle: Some useful links I like to refer
 ---
-## Data Science Resources
+
 * [Handling Missing Values](https://www.kdnuggets.com/2020/05/handnling-missing-values-statistical-modelling-prediction.html)
 * [Markdown Basics](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 * [Deploy a ML Model using Flask on Heroku](https://blog.cambridgespark.com/deploying-a-machine-learning-model-to-the-web-725688b851c7)

@@ -1,5 +1,5 @@
 ---
-layout: minimal
+layout: page
 ---
 # Data Science/ Python  Resources
 

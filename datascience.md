@@ -10,6 +10,7 @@ layout: minimal
 * [Flask Heroku Github Integration](https://scotch.io/@denisddesigner/flask-app-automatic-deploy-edit-from-github-to-herouku)
 * [Generic Flask API for SKlearn Models](https://towardsdatascience.com/a-flask-api-for-serving-scikit-learn-models-c8bcdaa41daa)
 * [Full Stack with Flask](https://www.fullstackpython.com/flask.html)
+* [Flask mega-tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
 * [Deep Learning with Pytorch](https://pytorch.org/assets/deep-learning/Deep-Learning-with-PyTorch.pdf)
 * [SQL Complete Tutorial](https://mode.com/sql-tutorial/)
 * [Kaggle 😅](https://www.kaggle.com/)

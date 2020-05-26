@@ -24,8 +24,9 @@ navbar-links:
   Resume: "/Satya_Dasara_Resume_DS.pdf"
   Projects: https://github.com/sdasara95
   Resources:
-    - Math/Stats: "mathstats"
-    - Algos/DS: "algos"
+    - Data Science: "datascience"
+    - Math / Stats: "mathstats"
+    - Algos / DS: "algos"
     - Code Editor: "https://www.markdowntutorial.com/"
     
 nav-search: search
@@ -94,13 +95,13 @@ excerpt_length: 50
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
 navbar-col: "#404040"
-navbar-text-col: "#F5F5F5"
+navbar-text-col: "#FBFAF6" #"#F5F5F5"
 navbar-border-col: "#EAEAEA"
-page-col: "#FFFFFF"
+page-col: "#FBFAF6" #"#FFFFFF"
 link-col: "#008AFF"
 hover-col: "#0085A1"
 footer-col: "#404040" #"#777777" 
-footer-text-col: "#F5F5F5"
+footer-text-col: "#FBFAF6" #"#F5F5F5"
 footer-link-col: "#000000" #"#404040"
 
 # Alternatively, the navbar, footer, and page background can be set to use background images

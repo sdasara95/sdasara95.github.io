@@ -1,14 +1,11 @@
 ---
 layout: page
 ---
-*** Algorithms and Data Structures *** <br />
-
-*** Datastructures & Algorithims to target: *** <br />
-*** Alg ***: Dynamic programming, Sliding window, DFS, BFS, Binary search, Backtracking, Bit Manipulation<br />
-*** DS ***: Array, Linked list, Stack, Queue, Priority Queue, Deque, Set, Map, Tree, Graph<br />
-
-*** Aim to solve atleast 200 LeetCode questions! *** <br />
-
+*** Algorithims & Data Structures to target: *** <br>
+*** Alg ***: Dynamic programming, Sliding window, DFS, BFS, Binary search, Backtracking, Bit Manipulation<br>
+*** DS ***: Array, Linked list, Stack, Queue, Priority Queue, Deque, Set, Map, Tree, Graph<br>
+<br>
+*** Aim to solve atleast 200 LeetCode questions! *** <br>
 *** Useful Links ***
 * [Consistent Effort Advice](https://leetcode.com/discuss/general-discussion/318537/Consistent-Practice-Advice/295327){:target="_blank"}
 * [SDE Interview Experience](https://leetcode.com/discuss/interview-experience/646712/NDA-Amazon-or-SDE2-or-Seattle-or-May-2020-Offer){:target="_blank"}

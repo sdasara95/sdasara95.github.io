@@ -19,6 +19,8 @@ layout: page
 * [Collections Python 🔑](https://docs.python.org/3/library/collections.html){:target="_blank"}
 * [Python Priority Queue 🔑](https://docs.python.org/2/library/heapq.html){:target="_blank"}
 * [Python Speed Tips 🤘](https://wiki.python.org/moin/PythonSpeed/PerformanceTips){:target="_blank"}
-* Design and Analysis of Algorithms by Madhavan Mukund
+* [Design and Analysis of Algorithms by Madhavan Mukund](https://www.youtube.com/channel/UCliJsnOQEU9ZkWEE7Vtryng){:target="_blank"}
 {% include youtube-embed.html id="videoseries?list=PL3pGy4HtqwD0ooUPM_0fLASrcXYWxL_Ry" %}
+
+Never stop LeetCoding!! 🖖
 

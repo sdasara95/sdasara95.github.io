@@ -26,3 +26,5 @@ This video gives a visual intuition of **linear algebra**.
 This video gives a visual intuition of **calculus**.
 {% include youtube-embed.html id="videoseries?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr" %}
 
+You can refer textbooks and solve questions to get a better grounding. But for now, having atleast a basic idea of the various concepts will suffice. 🤷‍♂️
+

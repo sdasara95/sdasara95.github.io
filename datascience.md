@@ -17,3 +17,5 @@
 * [Numerica Intuition](https://datasciencecareermap.com/2019/05/17/why-numerical-intuition-is-the-most-important-data-science-skill-i-screen-for/)
 * [Google Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course)
 * [Microsoft Forecasting Best Practices](https://microsoft.github.io/forecasting/)
+* [Solve NLP Problems](https://towardsdatascience.com/a-practitioners-guide-to-natural-language-processing-part-i-processing-understanding-text-9f4abfd13e72)
+* [Solve 90% NLP Problems like this](https://www.oreilly.com/content/how-to-solve-90-of-nlp-problems-a-step-by-step-guide/)

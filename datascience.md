@@ -19,3 +19,8 @@
 * [Microsoft Forecasting Best Practices](https://microsoft.github.io/forecasting/)
 * [Solve NLP Problems](https://towardsdatascience.com/a-practitioners-guide-to-natural-language-processing-part-i-processing-understanding-text-9f4abfd13e72)
 * [Solve 90% NLP Problems like this](https://www.oreilly.com/content/how-to-solve-90-of-nlp-problems-a-step-by-step-guide/)
+* [Google Resource Library](https://techdevguide.withgoogle.com/resources/working-existing-code/?programming_languages=python#!)
+* [Practicing Data Science Case Studies](https://cdn.oreillystatic.com/en/assets/1/event/292/Practicing%20data%20science_%20A%20collection%20of%20case%20studies%20Presentation.pdf)
+* [Daily Data Science Curriculum Schedule 🦥](https://docs.google.com/spreadsheets/d/1H-ENFHyxremhremtZ1Ld1I7pWndB9Q2aUOahkHMZfak/edit#gid=1807631196)
+* [4 Day Deep Learning Agenda 🍕](https://docs.google.com/document/d/16tdFvjMB3OvdTQRA38n7GEmrsSarU8aw0jBGYy3ajv0/edit)
+

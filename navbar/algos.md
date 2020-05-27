@@ -7,6 +7,7 @@ layout: page
 **DS**: Array, Linked list, Stack, Queue, Priority Queue, Deque, Set, Map, Tree, Graph <br>
 **Aim to solve atleast 200 LeetCode questions!** <br>
 **Useful Links**
+* [Cracking the Coding Interview 👈 Use as Reference!]("/assets/Cracking the Coding Interview, 6th Edition 189 Programming Questions and Solutions")
 * [How to pass a coding interview 🔍](https://triplebyte.com/blog/how-to-pass-a-programming-interview)
 * [Consistent Effort Advice](https://leetcode.com/discuss/general-discussion/318537/Consistent-Practice-Advice/295327){:target="_blank"}
 * [Sample SDE Interview Experience](https://leetcode.com/discuss/interview-experience/646712/NDA-Amazon-or-SDE2-or-Seattle-or-May-2020-Offer){:target="_blank"}

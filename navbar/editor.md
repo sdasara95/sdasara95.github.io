@@ -8,3 +8,7 @@ layout: page
 **Web Editor by trinket.io**<br>
 **Supports HTML, CSS, Javascript** <br>
 <iframe src="https://trinket.io/embed/html/3be1ab1cc1" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+**Java Editor by trinket.io**<br>
+**Supports Java 8**<br>
+<iframe src="https://trinket.io/embed/java/e4493d0964?toggleCode=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>

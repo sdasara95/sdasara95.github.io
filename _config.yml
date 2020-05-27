@@ -27,7 +27,7 @@ navbar-links:
     - Data Science: "navbar/datascience"
     - Math / Stats: "navbar/mathstats"
     - Algos / DS: "navbar/algos"
-    - Code Editor: "https://www.markdowntutorial.com/"
+    - Code Editor: "navbar/editor"
     
 nav-search: "navbar/search"
 

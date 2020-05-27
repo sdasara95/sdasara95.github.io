@@ -8,7 +8,7 @@ layout: page
 *** Aim to solve atleast 200 LeetCode questions! *** <br>
 *** Useful Links ***
 * [Consistent Effort Advice](https://leetcode.com/discuss/general-discussion/318537/Consistent-Practice-Advice/295327){:target="_blank"}
-* [SDE Interview Experience](https://leetcode.com/discuss/interview-experience/646712/NDA-Amazon-or-SDE2-or-Seattle-or-May-2020-Offer){:target="_blank"}
+* [Sample SDE Interview Experience](https://leetcode.com/discuss/interview-experience/646712/NDA-Amazon-or-SDE2-or-Seattle-or-May-2020-Offer){:target="_blank"}
 * [ByteByByte 50 Coding Questions 🎙](https://www.byte-by-byte.com/wp-content/uploads/2019/12/50-Coding-Interview-Questions-V2.pdf){:target="_blank"}
 * [ByteByByte DP for Interviews 🛠](https://www.byte-by-byte.com/wp-content/uploads/2019/04/Dynamic-Programming-for-Interviews.pdf){:target="_blank"}
 * [LeetCode 👈](https://leetcode.com/){:target="_blank"}

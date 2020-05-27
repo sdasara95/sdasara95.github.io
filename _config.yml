@@ -20,16 +20,16 @@ author: Satyaraja Dasara
 
 navbar-links:
   Home: "https://sdasara95.github.io/"
-  About: "aboutme"
+  About: "navbar/aboutme"
   Resume: "/Satya_Dasara_Resume_DS.pdf"
   Projects: https://github.com/sdasara95
   Resources:
-    - Data Science: "datascience"
-    - Math / Stats: "mathstats"
-    - Algos / DS: "algos"
+    - Data Science: "navbar/datascience"
+    - Math / Stats: "navbar/mathstats"
+    - Algos / DS: "navbar/algos"
     - Code Editor: "https://www.markdowntutorial.com/"
     
-nav-search: search
+nav-search: "navbar/search"
 
 # --- Logo --- #
 

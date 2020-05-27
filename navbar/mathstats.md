@@ -25,6 +25,8 @@ This video gives a visual intuition of **linear algebra**.
 * Calculus by 3Blue1Brown <br>
 This video gives a visual intuition of **calculus**.
 {% include youtube-embed.html id="videoseries?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr" %}
+* Neural Network Backprop by 3Blue1Brown
+{% include youtube-embed.html id="videoseries?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi" %}
 
 You can refer textbooks and solve questions to get a better grounding. But for now, having atleast a basic idea of the various concepts will suffice. 🤷‍♂️
 

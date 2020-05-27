@@ -13,8 +13,8 @@
 * [Flask mega-tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world){:target="_blank"}
 * [Deep Learning with Pytorch](https://pytorch.org/assets/deep-learning/Deep-Learning-with-PyTorch.pdf){:target="_blank"}
 * [SQL Complete Tutorial](https://mode.com/sql-tutorial/){:target="_blank"}
-* [SQL Notes for Professionals](https://media-exp1.licdn.com/dms/document/C561FAQE3ybnUxx2uYg/feedshare-document-pdf-analyzed/0?e=1590638400&v=beta&t=wJwG_gyV1eFkoqq6u-ZXVm_thcyFsSLaqgDYM9AWiPI)
-* [SQL Cheatsheet Slides](https://media-exp1.licdn.com/dms/document/C561FAQFDd-Wdnr-64A/feedshare-document-pdf-analyzed/0?e=1590638400&v=beta&t=5SVXHjXRLF_JTnax3yo0DS-NDajFIhZ5ZC5v_JvxFEI)
+* [SQL Notes for Professionals](https://media-exp1.licdn.com/dms/document/C561FAQE3ybnUxx2uYg/feedshare-document-pdf-analyzed/0?e=1590638400&v=beta&t=wJwG_gyV1eFkoqq6u-ZXVm_thcyFsSLaqgDYM9AWiPI){:target="_blank"}
+* [SQL Cheatsheet Slides](https://media-exp1.licdn.com/dms/document/C561FAQFDd-Wdnr-64A/feedshare-document-pdf-analyzed/0?e=1590638400&v=beta&t=5SVXHjXRLF_JTnax3yo0DS-NDajFIhZ5ZC5v_JvxFEI){:target="_blank"}
 * [Kaggle 😅](https://www.kaggle.com/){:target="_blank"}
 * [Analytics Vidhya](https://www.analyticsvidhya.com/){:target="_blank"}
 * [Numerical Intuition](https://datasciencecareermap.com/2019/05/17/why-numerical-intuition-is-the-most-important-data-science-skill-i-screen-for/){:target="_blank"}

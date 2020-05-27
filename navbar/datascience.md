@@ -2,6 +2,7 @@
 ---
 **Data Science/ Python Resources :**
 * [Handling Missing Values](https://www.kdnuggets.com/2020/05/handnling-missing-values-statistical-modelling-prediction.html){:target="_blank"}
+* [Project Euler](https://projecteuler.net/)
 * [Markdown Basics](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf){:target="_blank"}
 * [Git Basics](https://education.github.com/git-cheat-sheet-education.pdf)
 * [Any Cheatsheet](https://cheatography.com/)
@@ -31,3 +32,4 @@
 * [4 Day Deep Learning Agenda 🍕](https://docs.google.com/document/d/e/2PACX-1vQDhZIgIqFEwyWinAFPtKc_huiACF4Ze3lUr4xUyZuXXEsFB8vuUsw4U00ykaSamSLh1ViUGzj8ar4T/pub){:target="_blank"}
 * [Machine Learning Cheatsheet 📃](https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-machine-learning-tips-and-tricks){:target="_blank"}
 
+😅 That's it for now! Will update if I find anything interesting!

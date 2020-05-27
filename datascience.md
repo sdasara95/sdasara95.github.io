@@ -22,5 +22,5 @@
 * [Practicing Data Science Case Studies](https://cdn.oreillystatic.com/en/assets/1/event/292/Practicing%20data%20science_%20A%20collection%20of%20case%20studies%20Presentation.pdf){:target="_blank"}
 * [Daily Data Science Curriculum Schedule 🦥](https://docs.google.com/spreadsheets/d/1H-ENFHyxremhremtZ1Ld1I7pWndB9Q2aUOahkHMZfak/edit#gid=1807631196){:target="_blank"}
 * [4 Day Deep Learning Agenda 🍕](https://docs.google.com/document/d/16tdFvjMB3OvdTQRA38n7GEmrsSarU8aw0jBGYy3ajv0/edit){:target="_blank"}
-* [Machine Learning Cheatsheet 📃](https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-machine-learning-tips-and-tricks)
+* [Machine Learning Cheatsheet 📃](https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-machine-learning-tips-and-tricks){:target="_blank"}
 

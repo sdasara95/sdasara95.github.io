@@ -4,7 +4,7 @@ title: Curious case of recursion
 subtitle: Trying to understand this beautiful concept
 gh-repo: sdasara95/
 gh-badge: [follow]
-tags: [recursion]
+tags: [recursion, technical]
 comments: true
 ---
 Recursion has always been a tough concept to wrap my head around.  My main flaw in trying to understand it was not visualising it as a **tree unrolling**. Maybe my obsession with imperative programming paradigm could be to blame for this.  Ever since I started to visualise recursion as a **method** to **brute-force** the **search space** using **clones**, I have been able to write recursive code better. <br />

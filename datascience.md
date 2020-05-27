@@ -1,5 +1,4 @@
 ---
-layout: page
 ---
 # Data Science/ Python  Resources
 

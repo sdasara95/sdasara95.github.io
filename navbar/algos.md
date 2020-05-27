@@ -1,12 +1,12 @@
 ---
 layout: page
 ---
-*** Algorithims & Data Structures to target: *** <br>
-*** Alg ***: Dynamic programming, Sliding window, DFS, BFS, Binary search, Backtracking, Bit Manipulation<br>
-*** DS ***: Array, Linked list, Stack, Queue, Priority Queue, Deque, Set, Map, Tree, Graph<br>
-<br>
-*** Aim to solve atleast 200 LeetCode questions! *** <br>
-*** Useful Links ***
+
+**Algorithms & Data Structures to target:** <br>
+**Alg**: Dynamic programming, Sliding window, DFS, BFS, Binary search, Backtracking, Bit Manipulation <br>
+**DS**: Array, Linked list, Stack, Queue, Priority Queue, Deque, Set, Map, Tree, Graph <br>
+**Aim to solve atleast 200 LeetCode questions!** <br>
+**Useful Links**
 * [Consistent Effort Advice](https://leetcode.com/discuss/general-discussion/318537/Consistent-Practice-Advice/295327){:target="_blank"}
 * [Sample SDE Interview Experience](https://leetcode.com/discuss/interview-experience/646712/NDA-Amazon-or-SDE2-or-Seattle-or-May-2020-Offer){:target="_blank"}
 * [ByteByByte 50 Coding Questions 🎙](https://www.byte-by-byte.com/wp-content/uploads/2019/12/50-Coding-Interview-Questions-V2.pdf){:target="_blank"}
@@ -22,5 +22,5 @@ layout: page
 * [Design and Analysis of Algorithms by Madhavan Mukund](https://www.youtube.com/channel/UCliJsnOQEU9ZkWEE7Vtryng){:target="_blank"}
 {% include youtube-embed.html id="videoseries?list=PL3pGy4HtqwD0ooUPM_0fLASrcXYWxL_Ry" %}
 
-Never stop LeetCoding!! 🖖
+Never stop LeetCoding!! 🖖 to survive in Tech 😁
 

@@ -1,5 +1,7 @@
 ---
 ---
+## Data Science/ Python Resources
+
 * [Handling Missing Values](https://www.kdnuggets.com/2020/05/handnling-missing-values-statistical-modelling-prediction.html)
 * [Markdown Basics](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 * [Deploy a ML Model using Flask on Heroku](https://blog.cambridgespark.com/deploying-a-machine-learning-model-to-the-web-725688b851c7)
@@ -13,3 +15,5 @@
 * [Kaggle 😅](https://www.kaggle.com/)
 * [Analytics Vidhya](https://www.analyticsvidhya.com/)
 * [Numerica Intuition](https://datasciencecareermap.com/2019/05/17/why-numerical-intuition-is-the-most-important-data-science-skill-i-screen-for/)
+* [Google Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course)
+* [Microsoft Forecasting Best Practices](https://microsoft.github.io/forecasting/)

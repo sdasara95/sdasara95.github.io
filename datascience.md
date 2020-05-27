@@ -27,7 +27,7 @@
 * [NLP Cheatsheet](https://cheatography.com/murenei/cheat-sheets/natural-language-processing-with-python-and-nltk/){:target="_blank"}
 * [Google Resource Library](https://techdevguide.withgoogle.com/resources/working-existing-code/?programming_languages=python#!){:target="_blank"}
 * [Practicing Data Science Case Studies](https://cdn.oreillystatic.com/en/assets/1/event/292/Practicing%20data%20science_%20A%20collection%20of%20case%20studies%20Presentation.pdf){:target="_blank"}
-* [Daily Data Science Curriculum Schedule 🦥](https://docs.google.com/spreadsheets/d/1H-ENFHyxremhremtZ1Ld1I7pWndB9Q2aUOahkHMZfak/edit#gid=1807631196){:target="_blank"}
-* [4 Day Deep Learning Agenda 🍕](https://docs.google.com/document/d/16tdFvjMB3OvdTQRA38n7GEmrsSarU8aw0jBGYy3ajv0/edit){:target="_blank"}
+* [Daily Data Science Curriculum Schedule 🦥](https://docs.google.com/spreadsheets/d/e/2PACX-1vSSmw9A7qihHws_jtltPz18WnA1zEW6bJH0G9YHiwCOwynnY4y7xfiQ4Pry4UPkOpoiVtw-s26eV7xN/pubhtml){:target="_blank"}
+* [4 Day Deep Learning Agenda 🍕](https://docs.google.com/document/d/e/2PACX-1vQDhZIgIqFEwyWinAFPtKc_huiACF4Ze3lUr4xUyZuXXEsFB8vuUsw4U00ykaSamSLh1ViUGzj8ar4T/pub){:target="_blank"}
 * [Machine Learning Cheatsheet 📃](https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-machine-learning-tips-and-tricks){:target="_blank"}
 

@@ -32,6 +32,6 @@
 * [Daily Data Science Curriculum Schedule 🦥](https://docs.google.com/spreadsheets/d/e/2PACX-1vSSmw9A7qihHws_jtltPz18WnA1zEW6bJH0G9YHiwCOwynnY4y7xfiQ4Pry4UPkOpoiVtw-s26eV7xN/pubhtml){:target="_blank"}
 * [4 Day Deep Learning Agenda 🍕](https://docs.google.com/document/d/e/2PACX-1vQDhZIgIqFEwyWinAFPtKc_huiACF4Ze3lUr4xUyZuXXEsFB8vuUsw4U00ykaSamSLh1ViUGzj8ar4T/pub){:target="_blank"}
 * [Machine Learning Cheatsheet 📃](https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-machine-learning-tips-and-tricks){:target="_blank"}
-* [Polo Club of Data Science to visualize AI 😎](https://poloclub.github.io/)
+* [Polo Club of Data Science to visualize AI 😎](https://poloclub.github.io/){:target="_blank"}
 
 😅 That's it for now! Will update if I find anything interesting!

@@ -1,6 +1,7 @@
 ---
 ---
 **Data Science/ Python Resources :**
+* [10 useful ML practices](https://www.kdnuggets.com/2020/05/10-useful-machine-learning-practices-python-developers.html#.Xs_cIuA3Y_4.linkedin){:target="_blank"}
 * [Basic Definitions of Models](https://blog.dataiku.com/machine-learning-explained-algorithms-are-your-friend){:target="_blank"}
 * [Handling Missing Values](https://www.kdnuggets.com/2020/05/handnling-missing-values-statistical-modelling-prediction.html){:target="_blank"}
 * [Project Euler](https://projecteuler.net/)

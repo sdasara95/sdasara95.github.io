@@ -26,3 +26,7 @@ layout: page
 
 Never stop LeetCoding!! 🖖 to survive in Tech 😁
 
+Mostly unnecessary links:
+* (Graph Problem Resources)[https://www.quora.com/How-can-I-be-good-at-graph-theory-based-programming-problems-in-competitive-programming/answer/Sameer-Gulati-3?ch=10&share=fed73688&srid=oeMh]
+
+

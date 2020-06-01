@@ -2,13 +2,15 @@
 ---
 **Data Science/ Python Resources :**
 * [10 useful ML practices](https://www.kdnuggets.com/2020/05/10-useful-machine-learning-practices-python-developers.html#.Xs_cIuA3Y_4.linkedin){:target="_blank"}
-* [Useful Python Site- RealPython](https://realpython.com/){:target="_blank"}
+* [Model Evaluation Metrics](https://www.kdnuggets.com/2020/05/model-evaluation-metrics-machine-learning.html){:target="_blank"}
+* [ML in Production ⬅ Read all the guidelines](https://mlinproduction.com/){:target="_blank"}
+* [Useful Python Site- RealPython 💗](https://realpython.com/){:target="_blank"}
 * [Basic Definitions of Models](https://blog.dataiku.com/machine-learning-explained-algorithms-are-your-friend){:target="_blank"}
 * [Handling Missing Values](https://www.kdnuggets.com/2020/05/handnling-missing-values-statistical-modelling-prediction.html){:target="_blank"}
 * [Project Euler](https://projecteuler.net/)
 * [Markdown Basics](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf){:target="_blank"}
-* [Git Basics](https://education.github.com/git-cheat-sheet-education.pdf)
-* [Any Cheatsheet](https://cheatography.com/)
+* [Git Basics](https://education.github.com/git-cheat-sheet-education.pdf){:target="_blank"}
+* [Any Cheatsheet](https://cheatography.com/){:target="_blank"}
 * [Deploy a ML Model using Flask on Heroku](https://blog.cambridgespark.com/deploying-a-machine-learning-model-to-the-web-725688b851c7){:target="_blank"}
 * [Web App using Flask](https://www.freecodecamp.org/news/how-to-build-a-web-application-using-flask-and-deploy-it-to-the-cloud-3551c985e492/){:target="_blank"}
 * [Flask Heroku Github Integration](https://scotch.io/@denisddesigner/flask-app-automatic-deploy-edit-from-github-to-herouku){:target="_blank"}

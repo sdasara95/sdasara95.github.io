@@ -28,7 +28,8 @@
 * [Microsoft Forecasting Best Practices](https://microsoft.github.io/forecasting/){:target="_blank"}
 * [Solve NLP Problems](https://towardsdatascience.com/a-practitioners-guide-to-natural-language-processing-part-i-processing-understanding-text-9f4abfd13e72){:target="_blank"}
 * [Solve 90% NLP Problems like this](https://www.oreilly.com/content/how-to-solve-90-of-nlp-problems-a-step-by-step-guide/){:target="_blank"}
-* [NLTK Book](https://www.nltk.org/book/){:target="_blank"}
+* [NLTK Book ⚠](https://www.nltk.org/book/){:target="_blank"}
+* [Stanford NLP Course 👌](http://web.stanford.edu/class/cs224n/){:target="_blank"}
 * [Spacy Cheatsheet](https://www.datacamp.com/community/blog/spacy-cheatsheet){:target="_blank"}
 * [NLP Cheatsheet](https://cheatography.com/murenei/cheat-sheets/natural-language-processing-with-python-and-nltk/){:target="_blank"}
 * [Google Resource Library](https://techdevguide.withgoogle.com/resources/working-existing-code/?programming_languages=python#!){:target="_blank"}

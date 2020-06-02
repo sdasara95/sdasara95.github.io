@@ -10,6 +10,7 @@ I have some great references which I suggest for timely repetitive referencing. 
 * [Probability Cheatsheet 👈](https://static1.squarespace.com/static/54bf3241e4b0f0d81bf7ff36/t/55e9494fe4b011aed10e48e5/1441352015658/probability_cheatsheet.pdf){:target="_blank"}
 * [Statlect online textbook ](https://www.statlect.com/){:target="_blank"}
 * [Seeing Theory to visualize probability and statistics 😵](https://seeing-theory.brown.edu/#firstPage){:target="_blank"}
+* [Manga Book for Linear Algebra](https://www.math.ucla.edu/~jerryluo8/teaching/Winter2020-33A/The%20Manga%20Guide%20to%20Linear%20Algebra.pdf){:target="_blank"}
 * StatQuest by Josh Stramer 👈
 This is hands down the best intro YouTube channel for statistics. <br>
 Watch these two playlists:<br>

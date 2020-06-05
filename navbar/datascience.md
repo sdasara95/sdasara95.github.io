@@ -1,7 +1,5 @@
 ---
 ---
-**Data Science/ Python Resources :**
-
 <details markdown="1">
 <summary> Data Science </summary>
 * [Nice Coding Habits for DS](https://www.kdnuggets.com/2020/05/coding-habits-data-scientists.html){:target="_blank"}
@@ -42,7 +40,6 @@
 * [4 Day Deep Learning Agenda 🍕](https://docs.google.com/document/d/e/2PACX-1vQDhZIgIqFEwyWinAFPtKc_huiACF4Ze3lUr4xUyZuXXEsFB8vuUsw4U00ykaSamSLh1ViUGzj8ar4T/pub){:target="_blank"}
 * [Machine Learning Cheatsheet 📃](https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-machine-learning-tips-and-tricks){:target="_blank"}
 * [Polo Club of Data Science to visualize AI 😎](https://poloclub.github.io/){:target="_blank"}
-</p>
 </details>
 <details markdown="1">
 <summary> Python Optimization </summary>
@@ -50,5 +47,14 @@
 * [Python Optimization Tricks](https://www.techbeamers.com/python-code-optimization-tips-tricks/#h5){:target="_blank"}
 * [Python Basic Tricks](https://hackernoon.com/python-tricks-101-2836251922e0){:target="_blank"}
 * [Comprehensive Guide of PyTricks](https://github.com/brennerm/PyTricks){:target="_blank"}
+</details>
+<details markdown="1">
+<summary> Job Search </summary>
+* [Productivity Manager](https://clockify.me/tracker){:target="_blank"}
+* [Action verbs for resume](https://www.themuse.com/advice/185-powerful-verbs-that-will-make-your-resume-awesome){:target="_blank"}
+* [Lizzy Ann Job Search Tips](https://drive.google.com/file/d/1oP634FRjQGeuGM9XLeC0YUwgOysbKQc8/view){:target="_blank"}
+* [Lizzy Ann Job Search Tips 2](https://drive.google.com/file/d/10b9NZDhPbUOW_C7108IKe9ev6Ed2UG7F/view){:target="_blank"}
+* [Tesla Recruiter Tips](https://docs.google.com/document/u/1/d/e/2PACX-1vQpvbP8lzPvZrNvrX58UlacpQiLgh1fBQYfOS2pEJZvp-zOb9uKQJYKSsDQ6mJWoPf3H09OmdrLDcaK/pub){:target="_blank"}
+* [Github Guide for International Students](https://github.com/Effective-Immediately/effective-immediately#us-work-visas){:target="_blank"}
 </details>
 😅 That's it for now! Will update if I find anything interesting!

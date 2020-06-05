@@ -1,6 +1,11 @@
 ---
 ---
 **Data Science/ Python Resources :**
+
+<details>
+<summary> Data Science </summary>
+
+* [Nice Coding Habits for DS](https://www.kdnuggets.com/2020/05/coding-habits-data-scientists.html){:target="_blank"}
 * [10 useful ML practices](https://www.kdnuggets.com/2020/05/10-useful-machine-learning-practices-python-developers.html#.Xs_cIuA3Y_4.linkedin){:target="_blank"}
 * [Model Evaluation Metrics](https://www.kdnuggets.com/2020/05/model-evaluation-metrics-machine-learning.html){:target="_blank"}
 * [ML in Production ⬅ Read all the guidelines](https://mlinproduction.com/){:target="_blank"}
@@ -39,4 +44,14 @@
 * [Machine Learning Cheatsheet 📃](https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-machine-learning-tips-and-tricks){:target="_blank"}
 * [Polo Club of Data Science to visualize AI 😎](https://poloclub.github.io/){:target="_blank"}
 
+</details>
+<details>
+<summary> Python Optimization </summary>
+
+* [Memoize Decorator](http://code.activestate.com/recipes/578231-probably-the-fastest-memoization-decorator-in-the-/){:target="_blank"}
+* [Python Optimization Tricks](https://www.techbeamers.com/python-code-optimization-tips-tricks/#h5){:target="_blank"}
+* [Python Basic Tricks](https://hackernoon.com/python-tricks-101-2836251922e0){:target="_blank"}
+* [Comprehensive Guide of PyTricks](https://github.com/brennerm/PyTricks){:target="_blank"}
+
+</details>
 😅 That's it for now! Will update if I find anything interesting!

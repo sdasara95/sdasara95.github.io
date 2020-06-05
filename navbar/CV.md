@@ -9,6 +9,6 @@ layout: page
 <div>
 	<img src="https://sdasara95.github.io/assets/wordcloud.png" width="706px" height="449px" />
 </div>
-<!-- <iframe src=”/Satya_Dasara_Resume_DS.pdf" width=”100%” height=”100%”>
+<iframe src="https://sdasara95.github.io/Satya_Dasara_Resume_DS.pdf" width=”100%” height=”100%”>
 This browser does not support PDFs. Please download the PDF to view it: Download PDF
-</iframe> -->
+</iframe>

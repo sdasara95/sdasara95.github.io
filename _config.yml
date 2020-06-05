@@ -28,7 +28,6 @@ navbar-links:
     - Math / Stats: "navbar/mathstats"
     - Algos / DS: "navbar/algos"
     - Code Editor: "navbar/editor"
-    - Job Search: "navbar/jobsearch"
     
 nav-search: "navbar/search"
 

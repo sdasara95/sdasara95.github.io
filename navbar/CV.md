@@ -7,9 +7,9 @@ layout: page
 </div>
 
 <div>
-	<img src="https://sdasara95.github.io/assets/wordcloud.png" width="706px" height="449px" />
+	<img src="https://sdasara95.github.io/assets/wordcloud.png" width="706px" height="449px" /></img>
 </div>
 
 <div>
-<iframe src="https://sdasara95.github.io/Satya_Dasara_Resume_DS.pdf" width=”100%” height=”100%”>
+<iframe src="https://sdasara95.github.io/Satya_Dasara_Resume_DS.pdf" width=”100%” height=”100%”></iframe>
 </div>

@@ -21,7 +21,7 @@ author: Satyaraja Dasara
 navbar-links:
   Home: "https://sdasara95.github.io/"
   About: "navbar/aboutme"
-  CV: "navbar/CV"
+  CV: "/Satya_Dasara_Resume_DS.pdf"
   Projects: https://github.com/sdasara95
   Resources:
     - Data Science: "navbar/datascience"

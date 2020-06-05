@@ -21,13 +21,14 @@ author: Satyaraja Dasara
 navbar-links:
   Home: "https://sdasara95.github.io/"
   About: "navbar/aboutme"
-  Resume: "/Satya_Dasara_Resume_DS.pdf"
+  Resume: "navbar/resume"
   Projects: https://github.com/sdasara95
   Resources:
     - Data Science: "navbar/datascience"
     - Math / Stats: "navbar/mathstats"
     - Algos / DS: "navbar/algos"
     - Code Editor: "navbar/editor"
+    - Job Search: "navbar/jobsearch"
     
 nav-search: "navbar/search"
 

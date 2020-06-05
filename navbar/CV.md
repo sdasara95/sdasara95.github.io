@@ -7,7 +7,7 @@ layout: page
 </div>
 
 <div>
-	<img src="https://sdasara95.github.io/assets/wordcloud.png" width="706px" height="449px" /></img>
+	<img src="https://sdasara95.github.io/assets/wordcloud.png" width="706px" height="449px" />
 </div>
 
 <div>

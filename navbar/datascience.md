@@ -2,10 +2,8 @@
 ---
 **Data Science/ Python Resources :**
 
-<details>
+<details markdown="1">
 <summary> Data Science </summary>
-<p markdown="1">
-
 * [Nice Coding Habits for DS](https://www.kdnuggets.com/2020/05/coding-habits-data-scientists.html){:target="_blank"}
 * [10 useful ML practices](https://www.kdnuggets.com/2020/05/10-useful-machine-learning-practices-python-developers.html#.Xs_cIuA3Y_4.linkedin){:target="_blank"}
 * [Model Evaluation Metrics](https://www.kdnuggets.com/2020/05/model-evaluation-metrics-machine-learning.html){:target="_blank"}
@@ -44,18 +42,13 @@
 * [4 Day Deep Learning Agenda 🍕](https://docs.google.com/document/d/e/2PACX-1vQDhZIgIqFEwyWinAFPtKc_huiACF4Ze3lUr4xUyZuXXEsFB8vuUsw4U00ykaSamSLh1ViUGzj8ar4T/pub){:target="_blank"}
 * [Machine Learning Cheatsheet 📃](https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-machine-learning-tips-and-tricks){:target="_blank"}
 * [Polo Club of Data Science to visualize AI 😎](https://poloclub.github.io/){:target="_blank"}
-
 </p>
 </details>
-<details>
+<details markdown="1">
 <summary> Python Optimization </summary>
-<p markdown="1">
-
-* [Memoize Decorator](http://code.activestate.com/recipes/578231-probably-the-fastest-memoization-decorator-in-the-/){:target="_blank"}
+* [Memoize Decorator](http://code.activestate.com/recipes/578231-probably-the-fastest-memoization-decorator-in-the-/){:target="_blank"} 
 * [Python Optimization Tricks](https://www.techbeamers.com/python-code-optimization-tips-tricks/#h5){:target="_blank"}
 * [Python Basic Tricks](https://hackernoon.com/python-tricks-101-2836251922e0){:target="_blank"}
 * [Comprehensive Guide of PyTricks](https://github.com/brennerm/PyTricks){:target="_blank"}
-
-</p>
 </details>
 😅 That's it for now! Will update if I find anything interesting!

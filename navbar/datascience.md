@@ -5,6 +5,7 @@
 * [Nice Coding Habits for DS](https://www.kdnuggets.com/2020/05/coding-habits-data-scientists.html){:target="_blank"}
 * [10 useful ML practices](https://www.kdnuggets.com/2020/05/10-useful-machine-learning-practices-python-developers.html#.Xs_cIuA3Y_4.linkedin){:target="_blank"}
 * [Model Evaluation Metrics](https://www.kdnuggets.com/2020/05/model-evaluation-metrics-machine-learning.html){:target="_blank"}
+* [Plotly Dashboard](https://plotly.com/dash/){:target="_blank"}
 * [ML in Production ⬅ Read all the guidelines](https://mlinproduction.com/){:target="_blank"}
 * [Useful Python Site- RealPython 💗](https://realpython.com/){:target="_blank"}
 * [Basic Definitions of Models](https://blog.dataiku.com/machine-learning-explained-algorithms-are-your-friend){:target="_blank"}
@@ -40,13 +41,21 @@
 * [4 Day Deep Learning Agenda 🍕](https://docs.google.com/document/d/e/2PACX-1vQDhZIgIqFEwyWinAFPtKc_huiACF4Ze3lUr4xUyZuXXEsFB8vuUsw4U00ykaSamSLh1ViUGzj8ar4T/pub){:target="_blank"}
 * [Machine Learning Cheatsheet 📃](https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-machine-learning-tips-and-tricks){:target="_blank"}
 * [Polo Club of Data Science to visualize AI 😎](https://poloclub.github.io/){:target="_blank"}
+* [Data Engineering Interview Questions](https://github.com/andkret/Cookbook/blob/master/sections/08-InterviewQuestions.md){:target="_blank"}
+* [Data Engineering Basic Skills](https://github.com/andkret/Cookbook/blob/master/sections/02-BasicSkills.md#os-basics){:target="_blank"}
 </details>
 <details markdown="1">
-<summary> Python Optimization </summary>
+<summary> Python </summary>
 * [Memoize Decorator](http://code.activestate.com/recipes/578231-probably-the-fastest-memoization-decorator-in-the-/){:target="_blank"} 
 * [Python Optimization Tricks](https://www.techbeamers.com/python-code-optimization-tips-tricks/#h5){:target="_blank"}
 * [Python Basic Tricks](https://hackernoon.com/python-tricks-101-2836251922e0){:target="_blank"}
 * [Comprehensive Guide of PyTricks](https://github.com/brennerm/PyTricks){:target="_blank"}
+* [Full Stack Web Development](https://www.fullstackpython.com/table-of-contents.html){:target="_blank"}
+* [Python Host Anywhere](https://www.pythonanywhere.com/){:target="_blank"}
+</details>
+<details markdown="1">
+<summary> General/Programming </summary>
+* [Bash Cheatsheet](https://devhints.io/bash){:target="_blank"}
 </details>
 <details markdown="1">
 <summary> Job Search </summary>

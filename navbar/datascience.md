@@ -2,6 +2,10 @@
 ---
 <details markdown="1">
 <summary> Data Science </summary>
+* [Quick Deployment using Streamlit 🔥](https://github.com/streamlit/demo-self-driving){:target="_blank"}
+* [Pytorch Official Tutorials](https://pytorch.org/tutorials/){:target="_blank"}
+* [Financial Machine Learning by Hudson and Thames](https://github.com/hudson-and-thames/research){:target="_blank"}
+* [David Robinson Live Coding](https://www.youtube.com/watch?v=nx5yhXAQLxw&list=PL19ev-r1GBwkuyiwnxoHTRC8TTqP8OEi8&index=45){:target="_blank"}
 * [Nice Coding Habits for DS](https://www.kdnuggets.com/2020/05/coding-habits-data-scientists.html){:target="_blank"}
 * [10 useful ML practices](https://www.kdnuggets.com/2020/05/10-useful-machine-learning-practices-python-developers.html#.Xs_cIuA3Y_4.linkedin){:target="_blank"}
 * [Model Evaluation Metrics](https://www.kdnuggets.com/2020/05/model-evaluation-metrics-machine-learning.html){:target="_blank"}
@@ -56,6 +60,8 @@
 <details markdown="1">
 <summary> General/Programming </summary>
 * [Bash Cheatsheet](https://devhints.io/bash){:target="_blank"}
+* [Good Coding Habits](https://www.thoughtworks.com/insights/blog/coding-habits-data-scientists){:target="_blank"}
+* [How to debug for novices](http://blog.codeunion.io/2014/09/03/teaching-novices-how-to-debug-code/){:target="_blank"}
 </details>
 <details markdown="1">
 <summary> Job Search </summary>

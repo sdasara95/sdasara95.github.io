@@ -2,6 +2,8 @@
 ---
 <details markdown="1">
 <summary> Data Science </summary>
+*[NLP Best Practices by Microsoft 👌](https://github.com/microsoft/nlp-recipes){:target="_blank"}
+* [ML Tech Debt](https://www.kdnuggets.com/2020/06/nitpicking-machine-learning-technical-debt.html#.Xt5Ua3xfExk.linkedin){:target="_blank"}
 * [Quick Deployment using Streamlit 🔥](https://github.com/streamlit/demo-self-driving){:target="_blank"}
 * [Pytorch Official Tutorials](https://pytorch.org/tutorials/){:target="_blank"}
 * [Financial Machine Learning by Hudson and Thames](https://github.com/hudson-and-thames/research){:target="_blank"}

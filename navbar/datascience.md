@@ -64,6 +64,7 @@
 * [Bash Cheatsheet](https://devhints.io/bash){:target="_blank"}
 * [Good Coding Habits](https://www.thoughtworks.com/insights/blog/coding-habits-data-scientists){:target="_blank"}
 * [How to debug for novices](http://blog.codeunion.io/2014/09/03/teaching-novices-how-to-debug-code/){:target="_blank"}
+* [Git first contribution](https://www.dataschool.io/how-to-contribute-on-github/){:target="_blank"}
 </details>
 <details markdown="1">
 <summary> Job Search </summary>
@@ -74,4 +75,17 @@
 * [Tesla Recruiter Tips](https://docs.google.com/document/u/1/d/e/2PACX-1vQpvbP8lzPvZrNvrX58UlacpQiLgh1fBQYfOS2pEJZvp-zOb9uKQJYKSsDQ6mJWoPf3H09OmdrLDcaK/pub){:target="_blank"}
 * [Github Guide for International Students](https://github.com/Effective-Immediately/effective-immediately#us-work-visas){:target="_blank"}
 </details>
+<details markdown="1">
+<summary> Cracking TripleByte </summary>
+* [TripleByte](https://triplebyte.com/){:target="_blank"}
+* [Sample TripleByte Experience](https://medium.com/@smohajer85/my-triplebyte-experience-6ff51806160f){:target="_blank"}
+* [Implement Linear Regression with Gradient Descent](https://towardsdatascience.com/linear-regression-using-gradient-descent-97a6c8700931){:target="_blank"}
+* [kNN in Production](https://blog.dominodatalab.com/summary-using-k-nn-production/){:target="_blank"}
+* [Gaussian Processes](https://distill.pub/2019/visual-exploration-gaussian-processes/){:target="_blank"}
+* [Bayesian Applications](https://twiecki.io/archives.html){:target="_blank"}
+* [Domino Data Science Blog](https://blog.dominodatalab.com/){:target="_blank"}
+* [Technical Debt in Machine Learning](https://research.google/pubs/pub43146/){:target="_blank"}
+* [Teach yourself CS](https://teachyourselfcs.com/#algorithms){:target="_blank"}
+</details>
+
 😅 That's it for now! Will update if I find anything interesting!

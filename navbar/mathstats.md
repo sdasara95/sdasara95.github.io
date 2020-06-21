@@ -5,6 +5,7 @@ layout: page
 My work revolves around **statistics** and **linear algebra** with maybe a little bit of **calculus**.<br>
 The thing with math is that you remember it only if you **regularly practice** it. <br>
 I have some great references which I suggest for timely repetitive referencing. <br>
+* [Lumen Learning for Basic Math Refresher 🔃](https://courses.lumenlearning.com/finitemath1/){:target="_blank"}
 * [Nice Blog for refreshing statisics 👌](https://statisticsbyjim.com/){:target="_blank"}
 * [Probability and Statistics for Computer Scientists 👈 Use as Reference!]({{ site.url }}/assets/2018_Book_ProbabilityAndStatisticsForCom.pdf){:target="_blank"}
 * [ML Cheatsheet...Still under construction though 🤔](https://ml-cheatsheet.readthedocs.io/en/latest/){:target="_blank"}

@@ -87,5 +87,11 @@
 * [Technical Debt in Machine Learning](https://research.google/pubs/pub43146/){:target="_blank"}
 * [Teach yourself CS](https://teachyourselfcs.com/#algorithms){:target="_blank"}
 </details>
+<summary> Dream companies to work for  </summary>
+* [Point72](https://en.wikipedia.org/wiki/Point72_Asset_Management){:target="_blank"}
+* [Riskfuel](https://riskfuel.com/){:target="_blank"}
+* [Twenty](https://www.twenty.co/){:target="_blank"}
+* [Hawkfish](https://en.wikipedia.org/wiki/Hawkfish_(agency)){:target="_blank"}
+</details>
 
 😅 That's it for now! Will update if I find anything interesting!

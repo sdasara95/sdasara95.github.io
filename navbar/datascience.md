@@ -2,6 +2,13 @@
 ---
 <details markdown="1">
 <summary> Data Science </summary>
+* [NLP key terms explained!](https://www.kdnuggets.com/2017/02/natural-language-processing-key-terms-explained.html){:target="_blank"}
+* [Neptune.ai tips and tricks from image segmentation](https://neptune.ai/blog image-segmentation-tips-and-tricks-from-kaggle-competitions#preprocessing){:target="_blank"}
+* [Stream-lit deployment of ML models](https://towardsdatascience.com/make-your-machine-learning-models-come-alive-with-streamlit-48e6eb8e3004){:target="_blank"}
+* [AI searchable video library](https://daleonai.com/building-an-ai-powered-searchable-video-archive){:target="_blank"}
+* [Streamlit interacive dashboards](https://towardsdatascience.com/how-to-build-interactive-dashboards-in-python-using-streamlit-1198d4f7061b){:target="_blank"}
+* [Deal with missing values](https://www.kdnuggets.com/2020/06/missing-values-dataset.html){:target="_blank"}
+* [How to start NLP project](https://towardsdatascience.com/how-to-start-an-nlp-project-f76e3f7d0e61){:target="_blank"}
 * [NLP Best Practices by Microsoft 👌](https://github.com/microsoft/nlp-recipes){:target="_blank"}
 * [ML Tech Debt](https://www.kdnuggets.com/2020/06/nitpicking-machine-learning-technical-debt.html#.Xt5Ua3xfExk.linkedin){:target="_blank"}
 * [Quick Deployment using Streamlit 🔥](https://github.com/streamlit/demo-self-driving){:target="_blank"}
@@ -58,6 +65,7 @@
 * [Comprehensive Guide of PyTricks](https://github.com/brennerm/PyTricks){:target="_blank"}
 * [Full Stack Web Development](https://www.fullstackpython.com/table-of-contents.html){:target="_blank"}
 * [Python Host Anywhere](https://www.pythonanywhere.com/){:target="_blank"}
+* [Joblib to paralellize tasks](https://joblib.readthedocs.io/en/latest/){:target="_blank"}
 </details>
 <details markdown="1">
 <summary> General/Programming </summary>

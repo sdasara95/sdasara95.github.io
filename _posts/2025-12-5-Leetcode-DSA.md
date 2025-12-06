@@ -115,7 +115,7 @@ def compute_prefix_sums(nums):
     # For all remaining indexes, add 'nums[i]' to the cumulative sum from the previous index.
     for i in range(1, len(nums)):
 				# Running total can be a SUM or PRODUCT depends on problem
-				running = nums[i] + prefix[-1]
+        running = nums[i] + prefix[-1]
         prefix_sum.append(running)
 
 ```

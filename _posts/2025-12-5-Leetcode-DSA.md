@@ -13,13 +13,13 @@ This article refers heavily from these two links : [Leetcode Cheatsheet](https:/
 
 # Big O Complexity Chart
 
-![](sdasara95.github.io/assets/img/big-o.png)
+![](/assets/img/big-o.png)
 
 Remember that n! > 2^n because values > 2 get multiplied n times !
 
 # Problem Patterns
 
-![](sdasara95.github.io/assets/img/leetcode_flowchart.png)
+![](/assets/img/leetcode_flowchart.png)
 
 Look at the input and the question asked. Based on that you should be able to detect some pattern. Speak actively with the interviewer and ask questions and seek their confirmation to proceed down particular route. Also think aloud so your interviewer can know what's going on in your mind. For coding assessment rounds, these patterns should give you a pointer in the right direction.
 
@@ -106,19 +106,151 @@ Eg. Longest substring with unique characters
 
 Eg. Substring Anagrams
 
-## Prefix Sums 
+## Prefix Sums / K Sum Subarrays
 
 ```python
+from collections import defaultdict
+
 def compute_prefix_sums(nums):
     # Start by adding the first number to the prefix sums array.
     prefix_sum = [nums[0]]
     # For all remaining indexes, add 'nums[i]' to the cumulative sum from the previous index.
     for i in range(1, len(nums)):
-				# Running total can be a SUM or PRODUCT depends on problem
+        # Running total can be a SUM or PRODUCT depends on problem
         running = nums[i] + prefix[-1]
         prefix_sum.append(running)
 
+
+def compute_k_subarrays(arr, k):
+    counts = defaultdict(int)
+    counts[0] = 1
+    ans = curr = 0
+
+    for num in arr:
+        # do logic to change curr
+        ans += counts[curr - k]
+        counts[curr] += 1
+    
+    return ans
 ```
 
+There could be +ve or -ve values in the array.
+
 Eg. Sum between range, K-Sum Subarrays, Product Array without Current Element
+
+## Linked List : Fast and Slow Pointer
+
+```python
+class ListNode:
+   def __init__(self, val: int, next: ListNode):
+       self.val = val
+       self.next = next
+
+def fn(head):
+    slow = head
+    fast = head
+    ans = 0
+
+    while fast and fast.next:
+        # do logic
+        slow = slow.next
+        fast = fast.next.next
+    
+    return ans
+```
+
+This is used to **detect cycles in a linked list.** The distance of fast pointer from slow pointer at every iteration will keep increasing one more step eventually meeting the slow pointer again if there is a cycle.
+
+## Reverse Linked List
+
+```python
+def fn(head):
+    curr = head
+    prev = None
+    while curr:
+        next_node = curr.next
+        curr.next = prev
+        prev = curr
+        curr = next_node 
+        
+    return prev
+```
+
+When you reverse current node you need to store the next node as temp initially so you can reference it later to continue traversal.
+
+## Monotonic Increasing Stack
+
+```python
+def monotonic_stack(arr):
+    stack = []
+    ans = 0
+
+    for num in arr:
+        # for monotonic decreasing, just flip the > to <
+        while stack and stack[-1] > num:
+            # do logic
+            stack.pop()
+        stack.append(num)
+    
+    return ans
+
+def basic_sliding_window(arr):
+    left = ans = curr = 0
+
+    for right in range(len(arr)):
+        # do logic here to add arr[right] to curr
+
+        while WINDOW_CONDITION_BROKEN:
+            # remove arr[left] from curr
+            left += 1
+
+        # update ans
+    return ans
+```
+
+**Monotonic Stack** is used to find the break in pattern i.e. pivot point for elements in a stack. This is used to find the largest or smallest index previously.
+
+It's pattern is similar to a basic sliding window where instead of shifting left pointer based on window condition we just pop elements from the stack till it's empty or top of the stack is less than or greater than current element depending on our problem.
+
+For loop -> Traverse the array
+
+While loop inside -> Process logic wrt stack / left pointer
+
+**Largest Rectange/ Square Area in a Histogram** is famous problem for this pattern.
+
+## Heap
+
+```python
+import heapq
+
+def fn(arr, k):
+    heap = []
+    for num in arr:
+        # do some logic to push onto heap according to problem's criteria
+        heapq.heappush(heap, (CRITERIA, num))
+        if len(heap) > k:
+            heapq.heappop(heap)
+    
+    return [num for num in heap]
+```
+
+**Min heap** : prioritizes smallest element by keeping it at the top
+
+**Max heap** : prioritizes max element by keeping it at the top
+
+**Insertion** : *O(log(n))*
+
+**Deletion** : *O(log(n))* 
+
+**Peek** : *O(1)* 
+
+**Heapify** : *O(n)* 
+
+If you already have an unsorted array you can convert it into a heap in *O(n)* but adding or removing element will take *O(log(n))* 
+
+A **Priority queue** is a special type of a heap that allows for customizations in how elements are prioritized.
+
+Finding **Median of an Integer Stream or Array** is classic heap problem where you maintain a min heap and a max heap with equal or 1 difference values and get the median by popping the top elements in both heaps. Greater values are stored in min heap to get lowest of greater values. Lesser values are stored in max heap to get greatest of lesser values. Their mean is your median if both heaps equal in size. 
+
+##  
 

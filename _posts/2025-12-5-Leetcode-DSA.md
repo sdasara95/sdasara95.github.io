@@ -576,7 +576,7 @@ def dfs(state):
         undo_decision(state, decision)  # Backtrack.
 ```
 
-
+There is a lot of redundant work if we reach same state again and again!
 
 ## Dynamic Programming : Top Down Memoization
 

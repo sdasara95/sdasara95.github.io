@@ -46,6 +46,14 @@ def fn(arr):
 
 This two pointer opposite end **inward pattern** is useful for comparing elements at opposite ends like **valid palindrome** or **largest container**
 
+**Unidirectional Traversal**
+
+* One pointer finds information and other pointer keeps track of this information.
+
+**Staged Traversal**
+
+* Both pointers start at same end of the data structure i.e. beginning/end. One pointer is used to search for something, and once found, second pointer finds additional information concerning the first pointer. Things happen in stages.
+
 ## Two Pointers : two inputs from same direction, exhaust both
 
 ```python
@@ -70,26 +78,28 @@ def fn(arr1, arr2):
     return ans
 ```
 
-**Unidirectional Traversal**
-
-* One pointer finds information and other pointer keeps track of this information.
-
-**Staged Traversal**
-
-* Both pointers start at same end of the data structure i.e. beginning/end. One pointer is used to search for something, and once found, second pointer finds additional information concerning the first pointer. Things happen in stages.
+If you have to compare first element of first array with last element of second array you're better off reversing the second array and comparing first elements of both arrays.
 
 ## Sliding Window
 
 ```python
-left = right = 0
-while right < n:
-    # If the window has reached the expected fixed length, we slide the window (move both left and right).
-    if right - left + 1 == fixed_window_size:
-        # Process the current window.
-        result = process_current_window()
-        left += 1
-    right += 1
+def sliding_window(arr):
+    left = ans = curr = 0
+    
+  "You can use for loop or while loop for right pointer parsing through the array"
+  # for right in range(len(arr)):
+    while right < len(arr):
+        # do logic here to add arr[right] to curr
 
+        while WINDOW_CONDITION_BROKEN:
+            # remove arr[left] from curr
+            left += 1
+
+        # update ans
+        
+        right += 1 # Not needed if using FOR loop
+    
+    return ans
 ```
 
 **Dynamic Sliding Window**
@@ -252,5 +262,419 @@ A **Priority queue** is a special type of a heap that allows for customizations 
 
 Finding **Median of an Integer Stream or Array** is classic heap problem where you maintain a min heap and a max heap with equal or 1 difference values and get the median by popping the top elements in both heaps. Greater values are stored in min heap to get lowest of greater values. Lesser values are stored in max heap to get greatest of lesser values. Their mean is your median if both heaps equal in size. 
 
-##  
+## Binary Tree : DFS Recursive
+
+```python
+def dfs(root):
+    if not root:
+        return
+    
+    ans = 0
+
+    # do logic
+    dfs(root.left)
+    dfs(root.right)
+    return ans
+```
+
+Depth first search is usually done recursively for coding rounds. We can reach a null node and check if null and return. No need to look ahead before next recursive call.
+
+**Postorder** -> Current Node then Left & Right
+
+**Preorder** -> Left then Right then Current Node. Useful when current node value is derived from it's children.
+
+**Inorder** -> Left then Current Node then Right
+
+Think of naming as when to do ordered traversal wrt current node. Post means after current node, pre means before current node.
+
+## Binary Tree : DFS Iterative
+
+```python
+def dfs(root):
+    stack = [root]
+    ans = 0
+
+    while stack:
+        node = stack.pop()
+        # do logic
+        if node.left:
+            stack.append(node.left)
+        if node.right:
+            stack.append(node.right)
+
+    return ans
+```
+
+A recursion call creates a stack. If we want to do DFS iteratively then we have to manually initialise and use a stack.
+
+The order of insertion of elements in a stack for preorder or postorder will be as recursive calls made in previous function.
+
+Order of execution for stack is First In Last Out so most recently added nodes will be processed first.
+
+Remember that we first pop the stack to get the current node before adding it's left and right nodes.
+
+## Binary Tree : BFS
+
+```python
+from collections import deque
+
+def binary_tree_naive_bfs(root):
+    queue = deque([root])
+    ans = 0
+
+    while queue:
+        current_length = len(queue)
+        # do logic naively for nearest
+        node = queue.popleft()
+        # do logic
+        if node.left:
+            queue.append(node.left)
+        if node.right:
+            queue.append(node.right)
+
+    return ans
+
+"Difference here is that we process all elements in a level in one loop hence a for inside while to track state"
+def binary_tree_strict_level_bfs(root):
+    queue = deque([root])
+    ans = 0
+
+    while queue:
+        current_length = len(queue)
+        # do logic for current level
+        # THIS LINE IS DIFFERENCE WITH NAIVE BFS
+        for _ in range(current_length): 
+            node = queue.popleft()
+            # do logic
+            if node.left:
+                queue.append(node.left)
+            if node.right:
+                queue.append(node.right)
+
+    return ans
+```
+
+This is when we require level order traversal instead of depth order traversal. We explore neighbors then their neighbors and so on. 
+
+BFS uses a queue processed in FIFO pattern so that we explore neighbors first level wise.
+
+We fill the queue initially with the first root node.
+
+Based on our requirement for naive or strict level based processing we pop out the elements from the queue and process them and add their children to the queue.
+
+Don't use BFS for operations that require you find max depth as you'll end up unnecessarily exploring large parts of the tree/ graph before finding the max depth. Use DFS instead.
+
+## Graphs
+
+Graphs are like trees with nodes and edges but there is no strict constraint on their connections.
+
+Any node can be connected to any other node via an edge to form a graph
+
+```python
+class GraphNode:
+    def __init__(self, val):
+        self.val = val
+        self.neighbors = []
+
+```
+
+A node in a graph can have multiple neighbors.
+
+**Degree** of graph node is number of edges connected to it.
+
+**Path** is a sequence of nodes connected by edges.
+
+To solve a graph problem we first need to generate an **adjacency list** or **adjacency matrix** which we need to use for traversal.
+
+![](/assets/img/adjacency_list_matrix_graph.svg)
+
+In an adjacency list, the neighbors of each node are stored as a list. Adjacency lists can be implemented using a hash map, where the key represents the node, and its corresponding value represents the list of that node’s neighbors.
+
+In an adjacency matrix, the graph is represented as a 2D matrix where matrix[i][j] indicates an edge between nodes i and j.
+
+Adjacency lists are most common choice as they consume less space especially for sparse graphs.
+
+Adjacency matrices make sense when we handle dense graphs & need to check for existence of edges between two nodes frequently.
+
+Verty important to **keep track of visited nodes** to prevent infinite loops in cyclic graphs and eliminate double work.
+
+**Graph algorithm flowchart :**
+
+![](/assets/img/dsa_graph_flowchart.svg)
+
+## Graph DFS 
+
+```python
+#############################################
+
+"For graph node templates we need to traverse the node objects"
+class GraphNode:
+    def __init__(self, val):
+        self.val = val
+        self.neighbors = []
+
+"For graph node templates we need to traverse the node objects"
+class GraphNode:
+    def __init__(self, val):
+        self.val = val
+        self.neighbors = []
+def dfs(node: GraphNode, visited: Set[GraphNode]):
+    visited.add(node)
+    process(node)
+    for neighbor in node.neighbors:
+        if neighbor not in visited:
+            dfs(neighbor, visited)
+
+#############################################
+
+"For the graph templates, assume the nodes are numbered from 0 to n - 1 and the graph is given as an adjacency list."
+def recursive_dfs(graph):
+    def dfs(node):
+        ans = 0
+        # do some logic
+        for neighbor in graph[node]:
+            if neighbor not in seen:
+                seen.add(neighbor)
+                ans += dfs(neighbor)
+        
+        return ans
+
+    seen = {START_NODE}
+    return dfs(START_NODE)
+
+def iterative_dfs(graph):
+    stack = [START_NODE]
+    seen = {START_NODE}
+    ans = 0
+
+    while stack:
+        node = stack.pop()
+        # do some logic
+        for neighbor in graph[node]:
+            if neighbor not in seen:
+                seen.add(neighbor)
+                stack.append(neighbor)
+    
+    return ans
+
+#############################################
+```
+
+Depending on the problem we have to process the input accordingly.
+
+We can either traverse the graph nodes or convert them to an adjacency list and traverse accordingly.
+
+## Graph BFS
+
+```python
+from collections import deque
+
+#############################################
+
+"For graph node templates we need to traverse the node objects"
+class GraphNode:
+    def __init__(self, val):
+        self.val = val
+        self.neighbors = []
+
+def bfs(node: GraphNode):
+    visited = set()
+    queue = deque([node])
+    while queue:
+        node = queue.popleft()
+        if node not in visited:
+            visited.add(node)
+            process(node)
+            for neighbor in node.neighbors:
+                queue.append(neighbor)
+
+#############################################
+
+"For the graph templates, assume the nodes are numbered from 0 to n - 1 and the graph is given as an adjacency list."
+def bfs_adjacency_list(graph):
+    queue = deque([START_NODE])
+    seen = {START_NODE}
+    ans = 0
+
+    while queue:
+        node = queue.popleft()
+        # do some logic
+        for neighbor in graph[node]:
+            if neighbor not in seen:
+                seen.add(neighbor)
+                queue.append(neighbor)
+    
+    return ans
+
+#############################################
+
+```
+
+Same as above when it comes to handling various inputs.
+
+## Backtracking
+
+```python
+def backtrack(curr, OTHER_ARGUMENTS...):
+    if (BASE_CASE):
+        # modify the answer
+        return
+    
+    ans = 0
+    for (ITERATE_OVER_INPUT):
+        # modify the current state
+        ans += backtrack(curr, OTHER_ARGUMENTS...)
+        # undo the modification of the current state
+    
+    return ans
+```
+
+The code will seem similar to DFS recursive code. This is because recursive DFS is an example of backtracking.
+
+We return once we hit the base case. Till then we iterate through the input / nodes / neighbors / children recursively and get individual answers and combine them into our result and return it to our parent.
+
+### State Space Tree
+
+In backtracking, the state space tree, also known as the decision tree, is a conceptual tree constructed by considering every possible decision that can be made at each point in a process.
+
+![](/assets/img/state_space_tree.svg)
+
+Here's a simplified explanation of a state space tree:
+
+* Edges: Each edge represents a possible decision, move, or action.
+* Root node: The root node represents the initial state or position before any decisions are made.
+* Intermediate nodes: Nodes representing partially completed states or intermediate positions.
+* Leaf nodes: The leaf nodes represent complete or invalid solutions.
+* Path: A path from the root to any leaf node represents a sequence of decisions that lead to a complete or invalid solution.
+
+Drawing out the state space tree for a problem helps to visualize the entire solution space, and all possible decisions.
+
+### Backtracking Algorithm
+
+Traversing the state space tree is typically done using recursive DFS. Let's discuss how it's implemented at a high level.
+
+**Termination condition**: Define the condition that specifies when a path should end. This condition should define when we've found a valid and/or invalid solution.
+
+**Iterate through decisions**: Iterate through every possible decision at the current node, which contains the current state of the problem. For each decision:
+
+* Make that decision and update the current state accordingly.
+* Recursively explore all paths that branch from this updated state by calling the DFS function on this state.
+* Backtrack by undoing the decision we made and reverting the state.
+
+Below is a crude template for backtracking:
+
+```python
+def dfs(state):
+    # Termination condition.
+    if meets_termination_condition(state):
+        process_solution(state)
+        return
+    # Explore each possible decision that can be made at the current state.
+    for decision in possible_decisions(state):
+        make_decision(state, decision)
+        dfs(state) # USE DFS TO EXPLORE ALL CHILD STATES
+        undo_decision(state, decision)  # Backtrack.
+```
+
+## Dynamic Programming : Top Down Memoization
+
+```python
+def top_down_dp(arr):
+    def dp(STATE):
+        if BASE_CASE:
+            return 0
+        
+        if STATE in memo:
+            return memo[STATE]
+        
+        ans = RECURRENCE_RELATION(STATE)
+        memo[STATE] = ans
+        return ans
+
+    memo = {}
+    return dp(STATE_FOR_WHOLE_INPUT)
+```
+
+**Top Down DP is basically Backtracking + Memoization** 
+
+Explore the states with recurrence relation and cache any intermediate results to avoid double work if you come across the same state again.
+
+## Bottom Up DP
+
+```python
+def bottom_up_dp(arr):
+    # Initialize DP table
+    dp = {}  # or array of appropriate size
+    
+    # Set base cases
+    dp[BASE_STATE] = 0
+    
+    # Iterate through states in topological order
+    # (from smaller subproblems to larger)
+    for STATE in TOPOLOGICAL_ORDER:
+        dp[STATE] = RECURRENCE_RELATION(STATE)
+    
+    return dp[STATE_FOR_WHOLE_INPUT]
+```
+
+**Write a for-loop(s) that iterate over your state variables. If you have multiple state variables, you will need nested for-loops.**
+
+**Start iterating from the base cases and end at the answer state.**
+
+**Copy-paste the logic from your function into the for-loop and change the function calls to accessing your array. All dp(...)dp(...) changes into dp[...]dp[...].**
+
+Example for Fibonacci Series DP
+
+```python
+# Top-down
+def fib_top_down(n):
+    def dp(i):
+        if i <= 1:
+            return i
+        if i in memo:
+            return memo[i]
+        memo[i] = dp(i-1) + dp(i-2)
+        return memo[i]
+    memo = {}
+    return dp(n)
+
+# Bottom-up
+def fib_bottom_up(n):
+    if n <= 1:
+        return n
+    dp = [0] * (n + 1)
+    dp[0], dp[1] = 0, 1  # base cases
+    for i in range(2, n + 1):  # topological order
+        dp[i] = dp[i-1] + dp[i-2]
+    return dp[n]
+```
+
+When to use **While** loop instead of **For** loop?
+
+Use while when:
+
+* Step size varies
+* Early termination is possible
+* Termination condition is complex
+* Processing states from a queue/stack
+
+```python
+# Variable step sizes
+i = 0
+while i < n:
+    dp[i] = ...
+    i += step[i]  # non-uniform jumps
+
+# Early termination
+while i < n and not converged:
+    dp[i] = ...
+    i += 1
+
+# Complex termination conditions
+while queue:  # BFS-style DP
+    state = queue.pop()
+    ...
+```
+
+In practice, 90%+ of bottom-up DP uses for loops because most problems have predictable, sequential state transitions.
 

@@ -410,18 +410,12 @@ Verty important to **keep track of visited nodes** to prevent infinite loops in 
 
 ```python
 #############################################
-
 "For graph node templates we need to traverse the node objects"
 class GraphNode:
     def __init__(self, val):
         self.val = val
         self.neighbors = []
 
-"For graph node templates we need to traverse the node objects"
-class GraphNode:
-    def __init__(self, val):
-        self.val = val
-        self.neighbors = []
 def dfs(node: GraphNode, visited: Set[GraphNode]):
     visited.add(node)
     process(node)
@@ -695,7 +689,7 @@ class TrieNode:
 class Trie:
    def __init__(self):
        self.root = TrieNode()
-    
+
    def insert(self, word: str) -> None:
        node = self.root
        for c in word:
@@ -706,7 +700,7 @@ class Trie:
            node = node.children[c] # CHANGE NODE EVERY FOR ITERATION LOOP
        # Mark the last node as the end of a word.
        node.is_word = True
-    
+
    def search(self, word: str) -> bool:
        node = self.root
        for c in word:
@@ -717,7 +711,7 @@ class Trie:
            node = node.children[c] # CHANGE NODE EVERY FOR ITERATION LOOP
        # Return whether the current node is marked as the end of the word.
        return node.is_word
-    
+
    def has_prefix(self, prefix: str) -> bool:
        node = self.root
        for c in prefix:
@@ -789,3 +783,54 @@ def get_row_and_col_elements(matrix, row, col):
 ```
 
 While traversing a matrix we need to be comfortable with various operations like getting neighbors of a cell, boundary condition check, get all row or column elements of a cell etc.
+
+## Dijkstra's algorithm
+
+```python
+from math import inf
+import heapq
+from collections import defaultdict
+
+edges = [(source, nei_1, w1), (source, nei_2, w2), (source, nei_3, w3)]
+
+graph = defaultdict(list)
+
+
+# u = source node, v = neighbor node, w = edge distance weight
+for u, v, w in edges:
+    graph[u].append((v, w))
+    graph[v].append((u, w))
+
+
+distances = [inf] * n
+distances[source] = 0
+heap = [(0, source)]
+
+while heap:
+    curr_dist, node = heappop(heap)
+    
+    # THIS PREVENTS MULTIPLE PROCESSING OF VISITED NODES
+    if curr_dist > distances[node]:
+        continue
+    
+    for nei, weight in graph[node]:
+        dist = curr_dist + weight
+        if dist < distances[nei]:
+            distances[nei] = dist
+            heappush(heap, (dist, nei))
+```
+
+This algorithm is to find the **Shortest Path** from source node to each node in the graph if the graph has only **non-negative weighted edges.**
+
+Initially the distance from source node to all other nodes is **infinity**.
+
+This is a **greedy algorithm** where we use a **min heap** to get **closest unvisited nodes.** We don't need to maintain a **visited** set to prevent double processing. This is because we check current distance from source to the node and skip if it's more than through intermediate nodes. That way we process it again only if we encounter an even shorter path.
+
+Our greedy assumption is that the closest paths for one node will lead to closest paths for other nodes. That's why **min heap** **greedy solution** to get the nodes with minimum distance first.
+
+**Greedy assumption** will fail if we have **negative edges** .
+
+
+
+
+

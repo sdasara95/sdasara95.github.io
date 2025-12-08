@@ -7,7 +7,7 @@ tags: [personal, ramblings, algorithms, datastructures, leetcode, dsa]
 comments: true
 ---
 
-One very painful aspect of searching for a job as an experienced software engineer is preparing for leetcode datastructures algorithms problems again from scratch. Your 🧠 brain cache can only hold so much information at a particular point of time and if you're actually doing work at your job you'll definitely forget solving DSA problems quickly. The keyword here is **quickly** because you're expected to solve within a 30 minute or 45 minute time window. That's where you need to learn to do pattern matching quickly.
+One very painful aspect of searching for a job as an experienced software engineer is preparing for leetcode datastructures algorithms problems again from scratch. Your 🧠 brain cache can only hold so much information at a particular point of time and if you're actually doing work at your job you'll definitely forget solving DSA problems quickly. The keyword here is **quickly** because you're expected to solve within a 30 minute or 45 minute time window. That's why you need to learn to do pattern matching quickly.
 
 This article refers heavily from these two links : [Leetcode Cheatsheet](https://leetcode.com/explore/interview/card/cheatsheets/720/resources/4725/) and [ByteByteGo Interview Patterns](https://bytebytego.com/courses/coding-patterns/two-pointers/introduction-to-two-pointers)
 
@@ -22,6 +22,10 @@ Remember that n! > 2^n because values > 2 get multiplied n times !
 ![](/assets/img/leetcode_flowchart.png)
 
 Look at the input and the question asked. Based on that you should be able to detect some pattern. Speak actively with the interviewer and ask questions and seek their confirmation to proceed down particular route. Also think aloud so your interviewer can know what's going on in your mind. For coding assessment rounds, these patterns should give you a pointer in the right direction.
+
+# Pattern Decision Cheatsheet
+
+![](/assets/img/dsa_pattern_decision_cheatsheet.jpg)
 
 # Code Templates
 
@@ -680,3 +684,108 @@ while queue:  # BFS-style DP
 
 In practice, 90%+ of bottom-up DP uses for loops because most problems have predictable, sequential state transitions.
 
+## Trie
+
+```python
+class TrieNode:
+    def __init__(self):
+        self.children = {}
+        self.is_word = False
+
+class Trie:
+   def __init__(self):
+       self.root = TrieNode()
+    
+   def insert(self, word: str) -> None:
+       node = self.root
+       for c in word:
+           # For each character in the word, if it’s not a child of the current node,
+           # create a new TrieNode for that character.
+           if c not in node.children:
+               node.children[c] = TrieNode()
+           node = node.children[c] # CHANGE NODE EVERY FOR ITERATION LOOP
+       # Mark the last node as the end of a word.
+       node.is_word = True
+    
+   def search(self, word: str) -> bool:
+       node = self.root
+       for c in word:
+           # For each character in the word, if it’s not a child of the current node,
+           # the word doesn't exist in the Trie.
+           if c not in node.children:
+               return False
+           node = node.children[c] # CHANGE NODE EVERY FOR ITERATION LOOP
+       # Return whether the current node is marked as the end of the word.
+       return node.is_word
+    
+   def has_prefix(self, prefix: str) -> bool:
+       node = self.root
+       for c in prefix:
+           if c not in node.children:
+               return False
+           node = node.children[c] # CHANGE NODE EVERY FOR ITERATION LOOP
+       # Once we’ve traversed the nodes corresponding to each character in the
+       # prefix, return True.
+       return True
+
+```
+
+We build and use Tries to find **String Prefix**
+
+We **change node** in every **for loop** iteration as you can see in above code to continue searching remainder prefix among children.
+
+All operation be it **Insert, Search Word, Search Prefix, Delete** take same time complexity of **O(n)** 
+
+![](/assets/img/trie_dsa.svg)
+
+## Matrix Operation
+
+```python
+import copy
+
+def flatten_matrix(matrix):
+    # To 1D list
+    flat = [elem for row in matrix for elem in row]
+
+    # 1D index to 2D
+    row, col = index // cols, index % cols
+
+    # 2D to 1D index
+    index = row * cols + col
+
+def copy_matrix(matrix):
+    # Shalow copy
+    new_matrix = [row[:] for row in matrix]
+
+    # Deep copy
+    new_matrix = copy.deepcopy(matrix)
+
+def traverse(matrix, row, col):
+    rows, cols = len(matrix), len(matrix[0])
+    
+    # Up, Down, Left, Right
+    directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
+    
+    # 8 Direction with Diagonals
+    directions = [(-1, -1), (-1, 0), (-1, 1),
+              (0, -1),           (0, 1),
+              (1, -1),  (1, 0),  (1, 1)]
+    for dr, dc in directions:
+        nr, nc = row + dr, col + dc
+        
+        # Boundary check
+        if 0 <= nr < rows and 0 <= nc < cols:
+            # Process neighbor
+            neighbor = matrix[nr][nc]
+            # ... do something
+
+def get_row_and_col_elements(matrix, row, col):
+    rows, cols = len(matrix), len(matrix[0])
+    
+    row_elements = [matrix[row][c] for c in range(cols) if c != col]
+    col_elements = [matrix[r][col] for r in range(rows) if r != row]
+    
+    return row_elements, col_elements
+```
+
+While traversing a matrix we need to be comfortable with various operations like getting neighbors of a cell, boundary condition check, get all row or column elements of a cell etc.

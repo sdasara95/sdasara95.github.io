@@ -46,14 +46,6 @@ def fn(arr):
 
 This two pointer opposite end **inward pattern** is useful for comparing elements at opposite ends like **valid palindrome** or **largest container**
 
-**Unidirectional Traversal**
-
-* One pointer finds information and other pointer keeps track of this information.
-
-**Staged Traversal**
-
-* Both pointers start at same end of the data structure i.e. beginning/end. One pointer is used to search for something, and once found, second pointer finds additional information concerning the first pointer. Things happen in stages.
-
 ## Two Pointers : two inputs from same direction, exhaust both
 
 ```python
@@ -79,6 +71,14 @@ def fn(arr1, arr2):
 ```
 
 If you have to compare first element of first array with last element of second array you're better off reversing the second array and comparing first elements of both arrays.
+
+**Unidirectional Traversal**
+
+* One pointer finds information and other pointer keeps track of this information.
+
+**Staged Traversal**
+
+* Both pointers start at same end of the data structure i.e. beginning/end. One pointer is used to search for something, and once found, second pointer finds additional information concerning the first pointer. Things happen in stages.
 
 ## Sliding Window
 

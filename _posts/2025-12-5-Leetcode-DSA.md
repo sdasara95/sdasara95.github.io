@@ -3,7 +3,7 @@ layout: post
 title: Leetcode, Data Structures & Algorithms 
 subtitle: Quick Refresher 
 cover-img: "/assets/img/dsa.jpg"
-tags: [personal, ramblings, algorithms, datastructures, leetcode, dsa]
+tags: [personal, interviews, algorithms, datastructures, leetcode, dsa]
 comments: true
 ---
 
